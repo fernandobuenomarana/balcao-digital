@@ -3,251 +3,273 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Impermeabilizante Telhadista ABC | Loja Oficial</title>
-<meta name="description" content="Impermeabilizante da Telhadista ABC: acaba com infiltração em laje, telhado, parede, caixa d'água, banheiro e baldrame. Calcule quanto precisa e compre online.">
+<title>Super Borracha Líquida | O Telhadista ABC</title>
+<meta name="description" content="Super Borracha Líquida, a linha própria de impermeabilizantes de O Telhadista ABC. Para telhados, lajes, calhas, paredes e caixa d'água. Calcule quanto precisa e compre online.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 /* =========================================================
-   CORES DA MARCA — troque aqui para bater com o seu site
+   CORES DA MARCA (mesmas do telhadistaabc.com.br)
    ========================================================= */
 :root{
-  --navy:#0b1f33;
-  --navy-2:#12304d;
-  --agua:#1aa7d6;
-  --agua-claro:#7fd6f2;
-  --telha:#e2652b;
-  --telha-escuro:#c24f19;
-  --ok:#22b07d;
-  --texto:#1b2733;
-  --texto-suave:#5b6b7b;
-  --fundo:#f5f8fb;
+  --navy:#0a1222;
+  --navy-2:#141e34;
+  --navy-3:#1d2a44;
+  --vermelho:#d7193a;
+  --vermelho-escuro:#a5112c;
+  --rosa:#f0718c;
+  --agua:#3d8ee6;
+  --ok:#1fa971;
+  --texto:#151b29;
+  --texto-suave:#5d6577;
+  --fundo:#f5f6f9;
   --cartao:#ffffff;
-  --borda:#e2e9f0;
+  --borda:#e3e6ee;
   --raio:18px;
-  --sombra:0 18px 50px -20px rgba(11,31,51,.35);
+  --sombra:0 18px 50px -20px rgba(10,18,34,.35);
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:Inter,system-ui,sans-serif;color:var(--texto);background:var(--fundo);line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-h1,h2,h3,h4{font-family:Sora,Inter,sans-serif;line-height:1.15;letter-spacing:-.02em}
+body{font-family:Poppins,system-ui,sans-serif;color:var(--texto);background:var(--fundo);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+h1,h2,h3,h4{line-height:1.12;letter-spacing:-.025em;font-weight:800}
 img,svg{display:block;max-width:100%}
 button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
 input,select{font:inherit}
 a{color:inherit}
 .container{width:min(1180px,100% - 32px);margin-inline:auto}
-.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--agua)}
-.eyebrow::before{content:"";width:22px;height:2px;background:currentColor;border-radius:2px}
+.eyebrow{display:inline-flex;align-items:center;gap:14px;font-size:.78rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--texto)}
+.eyebrow::before{content:"";width:40px;height:3px;background:var(--vermelho);border-radius:2px;flex:0 0 40px}
+.escuro .eyebrow,.hero .eyebrow{color:#fff}
 .secao{padding:96px 0}
-.secao-titulo{font-size:clamp(1.8rem,3.6vw,2.7rem);margin:12px 0 14px}
-.secao-sub{color:var(--texto-suave);max-width:640px;font-size:1.06rem}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 26px;border-radius:999px;font-weight:700;transition:transform .2s,box-shadow .2s,background .2s;text-decoration:none;white-space:nowrap}
+.secao-titulo{font-size:clamp(1.9rem,3.8vw,2.8rem);margin:14px 0 14px}
+.secao-titulo em{font-style:normal;color:var(--vermelho)}
+.secao-sub{color:var(--texto-suave);max-width:640px;font-size:1.04rem}
+.escuro{background:var(--navy);color:#fff}
+.escuro .secao-sub{color:rgba(255,255,255,.7)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:16px 28px;border-radius:12px;font-weight:700;letter-spacing:.04em;transition:transform .2s,box-shadow .2s,background .2s;text-decoration:none;white-space:nowrap}
 .btn:active{transform:scale(.97)}
-.btn-primario{background:var(--telha);color:#fff;box-shadow:0 12px 30px -10px var(--telha)}
-.btn-primario:hover{background:var(--telha-escuro);transform:translateY(-2px)}
-.btn-fantasma{border:1.5px solid rgba(255,255,255,.35);color:#fff}
-.btn-fantasma:hover{background:rgba(255,255,255,.1)}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.btn-primario{background:linear-gradient(135deg,var(--vermelho),var(--vermelho-escuro));color:#fff;box-shadow:0 14px 34px -12px var(--vermelho)}
+.btn-primario:hover{transform:translateY(-2px);box-shadow:0 18px 40px -12px var(--vermelho)}
+.btn-fantasma{border:1.5px solid rgba(255,255,255,.3);color:#fff}
+.btn-fantasma:hover{background:rgba(255,255,255,.08)}
 .btn-escuro{background:var(--navy);color:#fff}
-.btn-escuro:hover{background:var(--navy-2)}
+.btn-escuro:hover{background:var(--navy-3)}
 .btn-bloco{width:100%}
 
 /* ---------- topo ---------- */
 .topo{position:fixed;inset:0 0 auto;z-index:50;transition:background .3s,box-shadow .3s}
-.topo.rolou{background:rgba(11,31,51,.92);backdrop-filter:blur(12px);box-shadow:0 6px 24px -12px rgba(0,0,0,.5)}
+.topo.rolou{background:rgba(10,18,34,.94);backdrop-filter:blur(12px);box-shadow:0 6px 24px -12px rgba(0,0,0,.6)}
 .topo .container{display:flex;align-items:center;justify-content:space-between;height:74px;gap:16px}
-.logo{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-family:Sora;font-weight:800;font-size:1.1rem}
-.logo-marca{width:38px;height:38px;border-radius:10px;background:linear-gradient(135deg,var(--telha),#f39a5c);display:grid;place-items:center}
-.menu{display:flex;gap:28px;color:rgba(255,255,255,.82);font-weight:500;font-size:.95rem}
+.logo{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-weight:800;font-size:1.05rem;letter-spacing:-.01em;line-height:1.2}
+.logo-marca{width:38px;height:38px;border-radius:10px;background:linear-gradient(135deg,var(--vermelho),var(--vermelho-escuro));display:grid;place-items:center;flex:0 0 38px}
+.logo small{display:block;font-size:.6rem;font-weight:600;letter-spacing:.18em;color:rgba(255,255,255,.6)}
+.menu{display:flex;gap:28px;color:rgba(255,255,255,.8);font-weight:500;font-size:.92rem}
 .menu a{text-decoration:none}
 .menu a:hover{color:#fff}
-.carrinho-btn{position:relative;width:46px;height:46px;border-radius:50%;background:rgba(255,255,255,.12);color:#fff;display:grid;place-items:center}
-.carrinho-btn:hover{background:rgba(255,255,255,.2)}
-.carrinho-qtd{position:absolute;top:-4px;right:-4px;min-width:22px;height:22px;border-radius:11px;background:var(--telha);font-size:.72rem;font-weight:800;display:grid;place-items:center;padding:0 5px;transform:scale(0);transition:transform .3s cubic-bezier(.5,1.8,.5,1)}
+.carrinho-btn{position:relative;width:46px;height:46px;border-radius:12px;background:rgba(255,255,255,.1);color:#fff;display:grid;place-items:center;flex:0 0 46px}
+.carrinho-btn:hover{background:rgba(255,255,255,.18)}
+.carrinho-qtd{position:absolute;top:-6px;right:-6px;min-width:22px;height:22px;border-radius:11px;background:var(--vermelho);font-size:.72rem;font-weight:800;display:grid;place-items:center;padding:0 5px;transform:scale(0);transition:transform .3s cubic-bezier(.5,1.8,.5,1)}
 .carrinho-qtd.tem{transform:scale(1)}
 .carrinho-btn.pulo{animation:pulo .5s}
 @keyframes pulo{40%{transform:scale(1.2)}}
 
 /* ---------- hero ---------- */
-.hero{position:relative;min-height:100vh;background:radial-gradient(1200px 600px at 75% 30%,#174a72 0%,var(--navy) 60%);color:#fff;overflow:hidden;display:flex;align-items:center;padding:120px 0 80px}
+.hero{position:relative;min-height:100vh;background:radial-gradient(900px 520px at 80% 40%,rgba(215,25,58,.22),transparent 60%),radial-gradient(900px 600px at 10% 80%,rgba(61,142,230,.14),transparent 60%),var(--navy);color:#fff;overflow:hidden;display:flex;align-items:center;padding:120px 0 80px}
 .chuva{position:absolute;inset:0;pointer-events:none}
-.gota{position:absolute;top:-60px;width:2px;height:60px;background:linear-gradient(transparent,rgba(127,214,242,.75));border-radius:2px;animation:cair linear infinite}
+.gota{position:absolute;top:-60px;width:2px;height:60px;background:linear-gradient(transparent,rgba(160,195,240,.55));border-radius:2px;animation:cair linear infinite}
 @keyframes cair{to{transform:translateY(115vh)}}
-.hero .container{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
-.hero h1{font-size:clamp(2.3rem,5.4vw,4.1rem);margin:18px 0 20px}
-.hero h1 em{font-style:normal;background:linear-gradient(90deg,var(--agua-claro),var(--agua));-webkit-background-clip:text;background-clip:text;color:transparent}
-.hero p.lead{font-size:1.15rem;color:rgba(255,255,255,.78);max-width:540px}
-.hero-ctas{display:flex;flex-wrap:wrap;gap:14px;margin:34px 0 36px}
-.selos{display:flex;flex-wrap:wrap;gap:22px;color:rgba(255,255,255,.75);font-size:.9rem}
+.hero .container{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.hero h1{font-size:clamp(2.6rem,6vw,4.6rem);margin:22px 0 18px;letter-spacing:-.04em;line-height:.98}
+.hero h1 em{font-style:normal;color:var(--vermelho);display:block}
+.hero .frase{font-size:clamp(1.15rem,2vw,1.45rem);font-weight:700;margin-bottom:16px;line-height:1.3}
+.hero p.lead{font-size:1.05rem;color:rgba(255,255,255,.72);max-width:520px}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:14px;margin:32px 0 34px}
+.selos{display:flex;flex-wrap:wrap;gap:20px;color:rgba(255,255,255,.75);font-size:.86rem}
 .selos span{display:flex;align-items:center;gap:8px}
-.selos svg{color:var(--agua-claro)}
-.hero-produto{position:relative;display:grid;place-items:center;min-height:460px}
-.escudo{position:absolute;width:min(440px,90%);aspect-ratio:1;border-radius:50%;border:1.5px solid rgba(127,214,242,.35);background:radial-gradient(circle,rgba(26,167,214,.18),transparent 65%);animation:respira 5s ease-in-out infinite}
-.escudo::after{content:"";position:absolute;inset:-26px;border-radius:50%;border:1px dashed rgba(127,214,242,.2);animation:gira 40s linear infinite}
-@keyframes respira{50%{transform:scale(1.04)}}
-@keyframes gira{to{transform:rotate(360deg)}}
-.balde{position:relative;width:min(300px,70%);filter:drop-shadow(0 40px 40px rgba(0,0,0,.45));animation:flutua 6s ease-in-out infinite}
-@keyframes flutua{50%{transform:translateY(-14px) rotate(-1.5deg)}}
-.chip-flutuante{position:absolute;background:rgba(255,255,255,.1);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.18);border-radius:14px;padding:10px 14px;font-size:.85rem;display:flex;align-items:center;gap:10px;animation:flutua 7s ease-in-out infinite}
-.chip-flutuante b{font-family:Sora;font-size:1.05rem;display:block}
-.chip-1{top:12%;left:-2%}
-.chip-2{bottom:16%;right:-2%;animation-delay:-3s}
-.chip-icone{width:34px;height:34px;border-radius:10px;background:var(--agua);display:grid;place-items:center}
+.selos svg{color:var(--rosa)}
+.hero-produto{position:relative;display:grid;place-items:center;min-height:440px}
+.foto-produto{width:115%;height:auto;max-width:none;-webkit-mask-image:radial-gradient(ellipse 62% 66% at 50% 50%,#000 55%,transparent 100%);mask-image:radial-gradient(ellipse 62% 66% at 50% 50%,#000 55%,transparent 100%);animation:flutua 7s ease-in-out infinite}
+@keyframes flutua{50%{transform:translateY(-12px)}}
+.chip-flutuante{position:absolute;background:rgba(20,30,52,.7);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:10px 14px;font-size:.78rem;display:flex;align-items:center;gap:10px;animation:flutua 6s ease-in-out infinite;color:rgba(255,255,255,.8);line-height:1.3}
+.chip-flutuante b{font-size:1rem;display:block;color:#fff}
+.chip-1{top:4%;left:2%}
+.chip-2{bottom:6%;right:0;animation-delay:-3s}
+.chip-icone{width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,var(--vermelho),var(--vermelho-escuro));display:grid;place-items:center;flex:0 0 36px}
 
 /* ---------- faixa ---------- */
-.faixa{background:var(--telha);color:#fff;overflow:hidden;padding:14px 0;font-family:Sora;font-weight:700}
-.faixa-trilho{display:flex;gap:48px;width:max-content;animation:desliza 30s linear infinite}
-.faixa-trilho span{display:flex;align-items:center;gap:48px;white-space:nowrap}
-.faixa-trilho span::after{content:"✦";opacity:.6}
+.faixa{background:linear-gradient(90deg,var(--vermelho),var(--vermelho-escuro));color:#fff;overflow:hidden;padding:14px 0;font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:.85rem}
+.faixa-trilho{display:flex;gap:40px;width:max-content;animation:desliza 32s linear infinite}
+.faixa-trilho span{display:flex;align-items:center;gap:40px;white-space:nowrap}
+.faixa-trilho span::after{content:"•";opacity:.6}
 @keyframes desliza{to{transform:translateX(-50%)}}
 
 /* ---------- casa interativa ---------- */
 .casa-wrap{display:grid;grid-template-columns:1.35fr 1fr;gap:28px;margin-top:48px;align-items:stretch}
-.casa-palco{position:relative;background:linear-gradient(#cfe7f5,#eaf4fa 60%);border-radius:var(--raio);overflow:hidden;box-shadow:var(--sombra)}
+.casa-palco{position:relative;background:linear-gradient(#cfe0f2,#eef4fa 60%);border-radius:var(--raio);overflow:hidden;box-shadow:var(--sombra)}
 .casa-palco svg{width:100%;height:auto}
-.alternador{position:absolute;top:16px;left:16px;display:flex;background:rgba(255,255,255,.85);backdrop-filter:blur(6px);border-radius:999px;padding:4px;box-shadow:0 6px 20px -10px rgba(0,0,0,.3);z-index:2}
-.alternador button{padding:8px 14px;border-radius:999px;font-size:.82rem;font-weight:700;color:var(--texto-suave);transition:.25s}
+.alternador{position:absolute;top:16px;left:16px;display:flex;background:rgba(255,255,255,.88);backdrop-filter:blur(6px);border-radius:999px;padding:4px;box-shadow:0 6px 20px -10px rgba(0,0,0,.3);z-index:2}
+.alternador button{padding:8px 14px;border-radius:999px;font-size:.8rem;font-weight:700;color:var(--texto-suave);transition:.25s}
 .alternador button.ativo{background:var(--navy);color:#fff}
 .alternador button.ativo.protegido{background:var(--ok)}
-.dica-palco{position:absolute;bottom:14px;left:16px;right:16px;font-size:.8rem;color:var(--navy);opacity:.75;text-align:center}
+.dica-palco{position:absolute;bottom:14px;left:16px;right:16px;font-size:.78rem;color:var(--navy);opacity:.75;text-align:center}
 .hotspot{cursor:pointer}
-.hotspot .anel{fill:var(--telha);opacity:.35;transform-box:fill-box;transform-origin:center;animation:anel 2s ease-out infinite}
-.hotspot .nucleo{fill:var(--telha);stroke:#fff;stroke-width:3;transition:.2s}
-.hotspot text{fill:#fff;font:800 13px Sora;text-anchor:middle;dominant-baseline:central;pointer-events:none}
+.hotspot .anel{fill:var(--vermelho);opacity:.35;transform-box:fill-box;transform-origin:center;animation:anel 2s ease-out infinite}
+.hotspot .nucleo{fill:var(--vermelho);stroke:#fff;stroke-width:3;transition:.2s}
+.hotspot text{fill:#fff;font:800 13px Poppins;text-anchor:middle;dominant-baseline:central;pointer-events:none}
 .hotspot:hover .nucleo,.hotspot.ativo .nucleo{fill:var(--navy)}
 .hotspot.ativo .anel{fill:var(--navy)}
 .hotspot:focus{outline:none}
 .hotspot:focus-visible .nucleo{stroke:var(--agua);stroke-width:4}
 @keyframes anel{from{transform:scale(.6);opacity:.6}to{transform:scale(1.9);opacity:0}}
 .mancha{fill:#6b5a3e;opacity:.5;transition:opacity .8s}
-.pelicula{fill:none;stroke:var(--agua);stroke-width:6;stroke-linecap:round;opacity:0;transition:opacity .8s;filter:drop-shadow(0 0 6px rgba(26,167,214,.8))}
+.pelicula{fill:none;stroke:var(--agua);stroke-width:6;stroke-linecap:round;opacity:0;transition:opacity .8s;filter:drop-shadow(0 0 6px rgba(61,142,230,.8))}
 .casa-palco.protegido .mancha{opacity:0}
 .casa-palco.protegido .pelicula{opacity:.9}
-.gota-svg{fill:var(--agua);opacity:.7}
+.gota-svg{fill:var(--agua);opacity:.75}
 .vazamento{animation:pinga 1.6s ease-in infinite;transition:opacity .6s}
 .casa-palco.protegido .vazamento{opacity:0;animation:none}
 @keyframes pinga{0%{transform:translateY(0);opacity:0}15%{opacity:.9}100%{transform:translateY(34px);opacity:0}}
-.chuva-svg line{stroke:#5aa9d0;stroke-width:1.5;opacity:.55;animation:chuvasvg .9s linear infinite}
+.chuva-svg line{stroke:#5a8fc8;stroke-width:1.5;opacity:.5;animation:chuvasvg .9s linear infinite}
 @keyframes chuvasvg{from{transform:translateY(-40px)}to{transform:translateY(40px)}}
 
 .painel{background:var(--cartao);border-radius:var(--raio);box-shadow:var(--sombra);padding:30px;display:flex;flex-direction:column}
-.painel-num{width:44px;height:44px;border-radius:12px;background:var(--telha);color:#fff;display:grid;place-items:center;font:800 1.1rem Sora;margin-bottom:16px}
+.painel-num{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--vermelho),var(--vermelho-escuro));color:#fff;display:grid;place-items:center;font-weight:800;margin-bottom:16px}
 .painel h3{font-size:1.5rem;margin-bottom:8px}
 .painel .problema{color:var(--texto-suave);margin-bottom:18px}
-.painel h4{font-size:.78rem;text-transform:uppercase;letter-spacing:.1em;color:var(--agua);margin:6px 0 10px}
+.painel h4{font-size:.74rem;text-transform:uppercase;letter-spacing:.16em;color:var(--vermelho);margin:6px 0 10px}
 .lista-check{list-style:none;display:grid;gap:9px;margin-bottom:20px}
-.lista-check li{display:flex;gap:10px;align-items:flex-start;font-size:.95rem}
+.lista-check li{display:flex;gap:10px;align-items:flex-start;font-size:.93rem}
 .lista-check li::before{content:"";flex:0 0 20px;height:20px;border-radius:50%;background:var(--ok) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12l5 5L20 7'/%3E%3C/svg%3E") center/12px no-repeat;margin-top:2px}
 .metricas{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:22px}
 .metricas div{background:var(--fundo);border-radius:12px;padding:12px;text-align:center}
-.metricas b{display:block;font:800 1.15rem Sora;color:var(--navy)}
-.metricas small{font-size:.74rem;color:var(--texto-suave)}
-.painel .btn{margin-top:auto}
+.metricas b{display:block;font-weight:800;font-size:1.1rem;color:var(--navy)}
+.metricas small{font-size:.72rem;color:var(--texto-suave)}
+.painel .btn{margin-top:auto;white-space:normal}
 .painel-anim{animation:entra .45s ease}
 @keyframes entra{from{opacity:0;transform:translateY(10px)}}
 .abas-areas{display:none;gap:8px;overflow-x:auto;padding-bottom:6px;margin-top:20px;scrollbar-width:none}
-.abas-areas button{flex:0 0 auto;padding:9px 14px;border-radius:999px;border:1.5px solid var(--borda);background:#fff;font-size:.85rem;font-weight:600}
+.abas-areas button{flex:0 0 auto;padding:9px 14px;border-radius:999px;border:1.5px solid var(--borda);background:#fff;font-size:.82rem;font-weight:600}
 .abas-areas button.ativo{background:var(--navy);border-color:var(--navy);color:#fff}
 
-/* ---------- antes x depois ---------- */
-.antes-depois{background:var(--navy);color:#fff}
-.ad-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:56px;align-items:center}
-.ad-grid .secao-sub{color:rgba(255,255,255,.72)}
-.comparador{position:relative;aspect-ratio:4/3;border-radius:var(--raio);overflow:hidden;user-select:none;touch-action:none;box-shadow:0 30px 60px -20px rgba(0,0,0,.6);cursor:ew-resize}
-.comparador svg{position:absolute;inset:0;width:100%;height:100%}
-.comparador .depois{clip-path:inset(0 0 0 50%)}
-.comparador .divisor{position:absolute;top:0;bottom:0;left:50%;width:3px;background:#fff;transform:translateX(-50%)}
-.comparador .alca{position:absolute;top:50%;left:50%;width:52px;height:52px;border-radius:50%;background:#fff;color:var(--navy);display:grid;place-items:center;transform:translate(-50%,-50%);box-shadow:0 8px 24px rgba(0,0,0,.35)}
-.rotulo{position:absolute;top:16px;padding:6px 12px;border-radius:999px;font-size:.75rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
-.rotulo.a{left:16px;background:rgba(0,0,0,.55)}
-.rotulo.d{right:16px;background:var(--ok)}
-.beneficios{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:30px}
-.beneficio{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:16px}
-.beneficio b{display:block;font-family:Sora;margin-bottom:4px}
-.beneficio span{font-size:.88rem;color:rgba(255,255,255,.7)}
+/* ---------- benefícios + obras ---------- */
+.beneficios{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-top:44px}
+.beneficio{background:linear-gradient(160deg,var(--navy-3),var(--navy-2));border:1px solid rgba(255,255,255,.08);border-radius:22px;padding:26px 22px;transition:transform .3s,border-color .3s}
+.beneficio:hover{transform:translateY(-6px);border-color:rgba(240,113,140,.4)}
+.beneficio .ic{width:64px;height:64px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#c8213f,#8d0f27);display:grid;place-items:center;margin-bottom:20px;box-shadow:0 12px 26px -10px rgba(215,25,58,.7)}
+.beneficio h3{font-size:1.15rem;margin-bottom:8px}
+.beneficio p{font-size:.9rem;color:rgba(255,255,255,.66)}
+.obras{display:grid;grid-template-columns:.85fr 1.15fr;gap:22px;margin-top:56px}
+.obra{position:relative;border-radius:22px;overflow:hidden;background:var(--navy-2)}
+.obra img{width:100%;height:100%;object-fit:cover;transition:transform .8s}
+.obra:hover img{transform:scale(1.04)}
+.obra figcaption{position:absolute;left:0;right:0;bottom:0;padding:60px 22px 20px;background:linear-gradient(transparent,rgba(10,18,34,.92));display:flex;gap:14px;align-items:baseline}
+.obra figcaption b{color:var(--rosa);font-weight:800}
+.obras-lado{display:grid;gap:22px;grid-template-rows:auto 1fr}
+.bidim{background:linear-gradient(135deg,var(--vermelho),var(--vermelho-escuro));border-radius:22px;padding:30px;display:flex;flex-direction:column;justify-content:center}
+.bidim span{font-size:.74rem;letter-spacing:.2em;font-weight:700;text-transform:uppercase;opacity:.85}
+.bidim h3{font-size:clamp(1.4rem,2.6vw,2rem);margin:10px 0}
+.bidim p{opacity:.88;font-size:.95rem}
+.nota{font-size:.74rem;color:rgba(255,255,255,.45);margin-top:22px}
 
-/* ---------- produto ---------- */
+/* ---------- linhas / produto ---------- */
+.linhas{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:36px 0 8px}
+.linha{position:relative;text-align:left;border:2px solid var(--borda);border-radius:18px;padding:20px 20px 18px;background:#fff;transition:.25s}
+.linha:hover{border-color:#c9cfdc}
+.linha.ativo{border-color:var(--vermelho);box-shadow:0 0 0 5px rgba(215,25,58,.1)}
+.linha .selo{position:absolute;top:-12px;right:16px;background:var(--navy);color:#fff;font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:5px 10px;border-radius:999px}
+.linha .selo.novo{background:var(--vermelho)}
+.linha b{display:block;font-size:1.08rem;font-weight:800;line-height:1.3;padding-right:20px}
+.linha small{color:var(--texto-suave);font-size:.85rem;display:block;margin-top:4px}
+.linha .esp{display:flex;align-items:center;gap:8px;margin-top:12px;font-size:.75rem;color:var(--texto-suave);font-weight:600}
+.linha .esp i{display:block;height:8px;border-radius:4px;background:linear-gradient(90deg,var(--vermelho),var(--rosa))}
 .produto-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start;margin-top:40px}
-.galeria{position:sticky;top:100px;background:radial-gradient(circle at 50% 40%,#fff,#e4eef5);border-radius:28px;aspect-ratio:1;display:grid;place-items:center;box-shadow:var(--sombra);overflow:hidden}
-.galeria .balde{width:58%;animation:none;transition:transform .5s cubic-bezier(.3,1.4,.5,1)}
-.galeria .tag-desc{position:absolute;top:20px;left:20px;background:var(--ok);color:#fff;font-weight:800;font-size:.8rem;padding:8px 12px;border-radius:999px}
-.produto-info h3{font-size:2rem;margin-bottom:8px}
-.estrelas{color:#f5b301;letter-spacing:2px;font-size:1rem}
-.preco-bloco{display:flex;align-items:baseline;gap:14px;margin:20px 0 4px;flex-wrap:wrap}
-.preco{font:800 2.4rem Sora;color:var(--navy)}
+.galeria{position:sticky;top:100px;background:radial-gradient(circle at 60% 40%,#1c2946,var(--navy));border-radius:28px;aspect-ratio:1;display:grid;place-items:center;box-shadow:var(--sombra);overflow:hidden}
+.galeria img{width:118%;height:auto;max-width:none;-webkit-mask-image:radial-gradient(ellipse 60% 62% at 50% 50%,#000 60%,transparent 100%);mask-image:radial-gradient(ellipse 60% 62% at 50% 50%,#000 60%,transparent 100%);transition:transform .5s cubic-bezier(.3,1.4,.5,1),filter .4s}
+.galeria .tag{position:absolute;top:20px;left:20px;background:var(--ok);color:#fff;font-weight:700;font-size:.78rem;padding:8px 12px;border-radius:999px;z-index:1}
+.galeria .aviso-premium{position:absolute;left:20px;right:20px;bottom:20px;background:rgba(10,18,34,.82);backdrop-filter:blur(8px);color:#fff;border:1px solid rgba(255,255,255,.15);border-radius:14px;padding:12px 16px;font-size:.84rem;display:none}
+.galeria.premium .aviso-premium{display:block}
+.galeria .amostra{position:absolute;right:22px;top:22px;width:52px;height:52px;border-radius:50%;border:3px solid #fff;box-shadow:0 8px 20px rgba(0,0,0,.4);transition:background .3s;z-index:1}
+.produto-info h3{font-size:2rem;margin-bottom:6px}
+.produto-info .desc{color:var(--texto-suave);margin-bottom:6px}
+.preco-bloco{display:flex;align-items:baseline;gap:14px;margin:18px 0 4px;flex-wrap:wrap}
+.preco{font-weight:800;font-size:2.4rem;color:var(--navy);letter-spacing:-.03em}
 .preco-antigo{text-decoration:line-through;color:var(--texto-suave)}
-.pix{color:var(--ok);font-weight:700;font-size:.95rem;margin-bottom:24px}
-.opcao-titulo{font-weight:700;font-size:.9rem;margin:22px 0 10px;display:flex;justify-content:space-between}
-.opcao-titulo span{font-weight:500;color:var(--texto-suave)}
-.tamanhos{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.pix{color:var(--ok);font-weight:700;font-size:.93rem}
+.opcao-titulo{font-weight:700;font-size:.88rem;margin:22px 0 10px;display:flex;justify-content:space-between;gap:10px}
+.opcao-titulo span{font-weight:500;color:var(--texto-suave);text-align:right}
+.tamanhos{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:10px}
 .tamanho{border:2px solid var(--borda);border-radius:14px;padding:14px 10px;text-align:center;background:#fff;transition:.2s}
-.tamanho b{display:block;font-family:Sora;font-size:1.1rem}
-.tamanho small{color:var(--texto-suave);font-size:.78rem}
-.tamanho.ativo{border-color:var(--agua);background:#eef9fd;box-shadow:0 0 0 4px rgba(26,167,214,.12)}
-.cores{display:flex;gap:12px}
-.cor{width:42px;height:42px;border-radius:50%;border:3px solid #fff;box-shadow:0 0 0 2px var(--borda);transition:.2s}
-.cor.ativo{box-shadow:0 0 0 3px var(--agua)}
+.tamanho b{display:block;font-size:1.1rem}
+.tamanho small{color:var(--texto-suave);font-size:.76rem}
+.tamanho.ativo{border-color:var(--vermelho);background:#fff5f7}
+.cores{display:flex;gap:16px;flex-wrap:wrap}
+.cor{display:flex;flex-direction:column;align-items:center;gap:6px;font-size:.76rem;font-weight:600;color:var(--texto-suave)}
+.cor i{width:46px;height:46px;border-radius:50%;border:3px solid #fff;box-shadow:0 0 0 2px var(--borda);transition:.2s}
+.cor.ativo i{box-shadow:0 0 0 3px var(--vermelho)}
+.cor.ativo{color:var(--texto)}
 .comprar-linha{display:flex;gap:12px;margin-top:28px}
-.qtd{display:flex;align-items:center;border:2px solid var(--borda);border-radius:999px;background:#fff}
-.qtd button{width:44px;height:50px;font-size:1.2rem;font-weight:700}
+.qtd{display:flex;align-items:center;justify-content:center;border:2px solid var(--borda);border-radius:12px;background:#fff}
+.qtd button{width:44px;height:52px;font-size:1.2rem;font-weight:700}
 .qtd input{width:40px;border:0;text-align:center;font-weight:700;background:transparent;-moz-appearance:textfield}
 .qtd input::-webkit-outer-spin-button,.qtd input::-webkit-inner-spin-button{-webkit-appearance:none}
 .comprar-linha .btn{flex:1}
 .garantias{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:22px}
-.garantias div{display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center;font-size:.78rem;color:var(--texto-suave);background:#fff;border-radius:12px;padding:12px 6px;border:1px solid var(--borda)}
-.garantias svg{color:var(--agua)}
+.garantias div{display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center;font-size:.76rem;color:var(--texto-suave);background:#fff;border-radius:12px;padding:12px 6px;border:1px solid var(--borda)}
+.garantias svg{color:var(--vermelho)}
 .specs{margin-top:28px;border-top:1px solid var(--borda)}
-.specs div{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid var(--borda);font-size:.92rem}
+.specs div{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid var(--borda);font-size:.9rem}
 .specs dt{color:var(--texto-suave)}
 .specs dd{font-weight:600;text-align:right}
 
 /* ---------- calculadora ---------- */
-.calc{background:linear-gradient(135deg,#eaf6fc,#f9fbfd)}
+.calc{background:linear-gradient(135deg,#eef1f7,#f9fafc)}
 .calc-card{display:grid;grid-template-columns:1fr 1fr;background:#fff;border-radius:28px;box-shadow:var(--sombra);overflow:hidden;margin-top:40px}
 .calc-form{padding:36px;display:grid;gap:18px;align-content:start}
-.campo label{display:block;font-weight:700;font-size:.88rem;margin-bottom:8px}
+.campo label{display:block;font-weight:700;font-size:.86rem;margin-bottom:8px}
 .campo select,.campo input{width:100%;padding:14px 16px;border:2px solid var(--borda);border-radius:12px;background:#fff;transition:border .2s}
-.campo select:focus,.campo input:focus{outline:none;border-color:var(--agua)}
+.campo select:focus,.campo input:focus{outline:none;border-color:var(--vermelho)}
 .medidas{display:grid;grid-template-columns:1fr auto 1fr;gap:10px;align-items:center}
 .medidas span{color:var(--texto-suave);font-weight:700}
 .ou{text-align:center;font-size:.8rem;color:var(--texto-suave);position:relative}
 .ou::before,.ou::after{content:"";position:absolute;top:50%;width:40%;height:1px;background:var(--borda)}
 .ou::before{left:0}.ou::after{right:0}
-.demaos{display:flex;gap:8px}
-.demaos button{flex:1;padding:12px;border:2px solid var(--borda);border-radius:12px;font-weight:700;background:#fff}
-.demaos button.ativo{border-color:var(--agua);background:#eef9fd;color:var(--navy)}
+.botoes-opcao{display:flex;gap:8px}
+.botoes-opcao button{flex:1;padding:12px 8px;border:2px solid var(--borda);border-radius:12px;font-weight:700;background:#fff;font-size:.88rem}
+.botoes-opcao button.ativo{border-color:var(--vermelho);background:#fff5f7;color:var(--navy)}
 .calc-resultado{background:var(--navy);color:#fff;padding:36px;display:flex;flex-direction:column;position:relative;overflow:hidden}
-.calc-resultado::before{content:"";position:absolute;width:320px;height:320px;border-radius:50%;background:radial-gradient(circle,rgba(26,167,214,.35),transparent 70%);top:-120px;right:-120px}
+.calc-resultado::before{content:"";position:absolute;width:340px;height:340px;border-radius:50%;background:radial-gradient(circle,rgba(215,25,58,.35),transparent 70%);top:-130px;right:-130px}
 .calc-resultado > *{position:relative}
-.litros{font:800 clamp(3rem,7vw,4.4rem) Sora;line-height:1;margin:8px 0 2px}
-.litros small{font-size:1.4rem;opacity:.7}
-.calc-detalhe{color:rgba(255,255,255,.7);font-size:.9rem;margin-bottom:22px}
+.calc-resultado .eyebrow{color:#fff}
+.quantidade{font-weight:800;font-size:clamp(3rem,7vw,4.4rem);line-height:1;margin:12px 0 4px;letter-spacing:-.04em}
+.quantidade small{font-size:1.4rem;opacity:.7;letter-spacing:0}
+.calc-detalhe{color:rgba(255,255,255,.65);font-size:.86rem;margin-bottom:22px}
 .kit{display:grid;gap:10px;margin-bottom:20px}
-.kit-item{display:flex;justify-content:space-between;align-items:center;background:rgba(255,255,255,.08);border-radius:12px;padding:12px 14px}
-.kit-item b{font-family:Sora}
-.kit-total{display:flex;justify-content:space-between;align-items:baseline;border-top:1px solid rgba(255,255,255,.15);padding-top:16px;margin:auto 0 18px}
-.kit-total b{font:800 1.8rem Sora}
+.kit-item{display:flex;justify-content:space-between;align-items:center;gap:10px;background:rgba(255,255,255,.07);border-radius:12px;padding:12px 14px;font-size:.92rem}
+.kit-total{display:flex;justify-content:space-between;align-items:baseline;border-top:1px solid rgba(255,255,255,.15);padding-top:16px;margin:20px 0 18px}
+.kit-total b{font-weight:800;font-size:1.8rem}
 .medidor{height:8px;border-radius:4px;background:rgba(255,255,255,.12);overflow:hidden;margin-bottom:6px}
-.medidor div{height:100%;background:linear-gradient(90deg,var(--agua),var(--agua-claro));border-radius:4px;transition:width .5s}
+.medidor div{height:100%;background:linear-gradient(90deg,var(--vermelho),var(--rosa));border-radius:4px;transition:width .5s}
 
 /* ---------- passos ---------- */
 .passos{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:48px;counter-reset:p}
-.passo{background:#fff;border-radius:var(--raio);padding:28px 22px;border:1px solid var(--borda);position:relative;transition:transform .3s,box-shadow .3s}
+.passo{background:#fff;border-radius:var(--raio);padding:28px 22px;border:1px solid var(--borda);transition:transform .3s,box-shadow .3s}
 .passo:hover{transform:translateY(-6px);box-shadow:var(--sombra)}
-.passo::before{counter-increment:p;content:"0" counter(p);font:800 2.6rem Sora;color:transparent;-webkit-text-stroke:1.5px var(--agua);display:block;margin-bottom:14px}
-.passo h3{font-size:1.15rem;margin-bottom:8px}
-.passo p{color:var(--texto-suave);font-size:.93rem}
+.passo::before{counter-increment:p;content:"0" counter(p);font-weight:800;font-size:2.6rem;color:transparent;-webkit-text-stroke:1.5px var(--vermelho);display:block;margin-bottom:14px}
+.passo h3{font-size:1.12rem;margin-bottom:8px}
+.passo p{color:var(--texto-suave);font-size:.9rem}
 
 /* ---------- comparativo ---------- */
 .tabela-wrap{overflow-x:auto;margin-top:40px;border-radius:var(--raio);box-shadow:var(--sombra);background:#fff}
-table{width:100%;border-collapse:collapse;min-width:640px}
-th,td{padding:16px 20px;text-align:center;border-bottom:1px solid var(--borda);font-size:.95rem}
+table{width:100%;border-collapse:collapse;min-width:680px}
+th,td{padding:16px 20px;text-align:center;border-bottom:1px solid var(--borda);font-size:.92rem}
 th:first-child,td:first-child{text-align:left;font-weight:600}
-thead th{font-family:Sora;font-size:.95rem;background:var(--fundo)}
+thead th{font-size:.9rem;background:var(--fundo)}
 thead th.nosso{background:var(--navy);color:#fff}
-td.nosso{background:#eef9fd;font-weight:700;color:var(--navy)}
+td.nosso{background:#fff5f7;font-weight:700;color:var(--navy)}
 .sim{color:var(--ok);font-weight:800}
-.nao{color:#c94a4a;font-weight:800}
+.nao{color:var(--vermelho);font-weight:800}
 
 /* ---------- faq ---------- */
 .faq{max-width:820px;margin:40px auto 0;display:grid;gap:12px}
@@ -255,95 +277,103 @@ td.nosso{background:#eef9fd;font-weight:700;color:var(--navy)}
 .faq details[open]{box-shadow:var(--sombra)}
 .faq summary{list-style:none;cursor:pointer;padding:20px 0;font-weight:700;display:flex;justify-content:space-between;gap:16px;align-items:center}
 .faq summary::-webkit-details-marker{display:none}
-.faq summary::after{content:"+";font:400 1.6rem Sora;color:var(--agua);transition:transform .3s}
+.faq summary::after{content:"+";font-weight:400;font-size:1.6rem;color:var(--vermelho);transition:transform .3s}
 .faq details[open] summary::after{transform:rotate(45deg)}
 .faq details p{padding:0 0 20px;color:var(--texto-suave)}
 
 /* ---------- cta final ---------- */
-.cta-final{background:linear-gradient(120deg,var(--telha),#f08a4b);color:#fff;border-radius:28px;padding:56px;display:flex;justify-content:space-between;align-items:center;gap:30px;flex-wrap:wrap}
-.cta-final h2{font-size:clamp(1.7rem,3.4vw,2.5rem);max-width:600px}
-.cta-final .btn{background:#fff;color:var(--telha-escuro)}
-footer{background:var(--navy);color:rgba(255,255,255,.65);padding:48px 0;margin-top:96px;font-size:.9rem}
+.cta-final{background:radial-gradient(600px 300px at 90% 0%,rgba(215,25,58,.5),transparent 70%),var(--navy);color:#fff;border-radius:28px;padding:56px;display:flex;justify-content:space-between;align-items:center;gap:30px;flex-wrap:wrap}
+.cta-final h2{font-size:clamp(1.7rem,3.4vw,2.5rem);max-width:620px}
+.cta-final h2 em{font-style:normal;color:var(--rosa)}
+footer{background:var(--navy);color:rgba(255,255,255,.62);padding:48px 0;margin-top:96px;font-size:.88rem}
 footer .container{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+footer a{color:#fff}
 
 /* ---------- carrinho ---------- */
-.veu{position:fixed;inset:0;background:rgba(11,31,51,.55);backdrop-filter:blur(3px);opacity:0;pointer-events:none;transition:.3s;z-index:90}
+.veu{position:fixed;inset:0;background:rgba(10,18,34,.6);backdrop-filter:blur(3px);opacity:0;pointer-events:none;transition:.3s;z-index:90}
 .veu.aberto{opacity:1;pointer-events:auto}
 .gaveta{position:fixed;top:0;right:0;bottom:0;width:min(440px,100%);background:#fff;z-index:100;transform:translateX(100%);transition:transform .4s cubic-bezier(.2,.8,.2,1);display:flex;flex-direction:column}
 .gaveta.aberta{transform:none}
 .gaveta-topo{display:flex;justify-content:space-between;align-items:center;padding:22px 24px;border-bottom:1px solid var(--borda)}
-.gaveta-topo h3{font-size:1.25rem}
+.gaveta-topo h3{font-size:1.2rem}
 .fechar{width:38px;height:38px;border-radius:50%;background:var(--fundo);display:grid;place-items:center;font-size:1.3rem}
 .gaveta-corpo{flex:1;overflow-y:auto;padding:20px 24px}
 .item-carrinho{display:grid;grid-template-columns:64px 1fr auto;gap:14px;align-items:center;padding:14px 0;border-bottom:1px solid var(--borda)}
-.item-thumb{width:64px;height:64px;border-radius:12px;background:var(--fundo);display:grid;place-items:center}
-.item-carrinho h4{font-size:.95rem;font-family:Inter}
+.item-thumb{width:64px;height:64px;border-radius:12px;background:var(--navy);overflow:hidden;position:relative}
+.item-thumb img{width:100%;height:100%;object-fit:cover;transform:scale(1.5)}
+.item-thumb i{position:absolute;right:4px;bottom:4px;width:16px;height:16px;border-radius:50%;border:2px solid #fff}
+.item-carrinho h4{font-size:.9rem;font-weight:700;letter-spacing:0;line-height:1.3}
 .item-carrinho small{color:var(--texto-suave)}
 .item-acoes{display:flex;align-items:center;gap:8px;margin-top:6px}
 .item-acoes button{width:28px;height:28px;border-radius:8px;background:var(--fundo);font-weight:700}
-.item-acoes .remover{width:auto;padding:0 8px;font-size:.78rem;color:#c94a4a;background:none}
-.item-preco{font-weight:800;font-family:Sora}
+.item-acoes .remover{width:auto;padding:0 8px;font-size:.76rem;color:var(--vermelho);background:none}
+.item-preco{font-weight:800}
 .vazio{text-align:center;padding:60px 10px;color:var(--texto-suave)}
 .vazio svg{margin:0 auto 14px;color:var(--borda)}
 .gaveta-rodape{padding:20px 24px;border-top:1px solid var(--borda);display:grid;gap:12px;background:var(--fundo)}
 .cep-linha{display:flex;gap:8px}
-.cep-linha input{flex:1;padding:12px 14px;border:2px solid var(--borda);border-radius:12px}
+.cep-linha input{flex:1;min-width:0;padding:12px 14px;border:2px solid var(--borda);border-radius:12px}
 .cep-linha button{padding:0 16px;border-radius:12px;background:var(--navy);color:#fff;font-weight:700}
-.frete-msg{font-size:.85rem;min-height:1.2em}
+.frete-msg{font-size:.84rem;min-height:1.2em}
 .frete-msg.ok{color:var(--ok)}
-.linha-total{display:flex;justify-content:space-between;font-size:.95rem}
-.linha-total.grande{font:800 1.3rem Sora}
+.linha-total{display:flex;justify-content:space-between;font-size:.93rem}
+.linha-total.grande{font-weight:800;font-size:1.3rem}
 .pagamentos{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
-.pagamentos label{border:2px solid var(--borda);border-radius:10px;padding:9px 4px;text-align:center;font-size:.82rem;font-weight:700;cursor:pointer;background:#fff}
+.pagamentos label{position:relative;border:2px solid var(--borda);border-radius:10px;padding:9px 4px;text-align:center;font-size:.8rem;font-weight:700;cursor:pointer;background:#fff}
 .pagamentos input{position:absolute;opacity:0}
-.pagamentos label:has(input:checked){border-color:var(--agua);background:#eef9fd}
+.pagamentos label:has(input:checked){border-color:var(--vermelho);background:#fff5f7}
 .btn-whats{background:#1fae54;color:#fff}
 .btn-whats:hover{background:#178f44}
-.whats-flutuante{position:fixed;right:20px;bottom:20px;width:60px;height:60px;border-radius:50%;background:#1fae54;color:#fff;display:grid;place-items:center;box-shadow:0 12px 30px -8px rgba(31,174,84,.7);z-index:40;transition:transform .2s}
+.whats-flutuante{position:fixed;right:20px;bottom:20px;width:60px;height:60px;border-radius:50%;background:#25d366;color:#fff;display:grid;place-items:center;box-shadow:0 12px 30px -8px rgba(37,211,102,.7);z-index:40;transition:transform .2s}
 .whats-flutuante:hover{transform:scale(1.08)}
-.toast{position:fixed;left:50%;bottom:28px;transform:translate(-50%,140%);background:var(--navy);color:#fff;padding:14px 20px;border-radius:14px;font-weight:600;z-index:120;transition:transform .4s cubic-bezier(.3,1.4,.5,1);display:flex;gap:10px;align-items:center;max-width:calc(100% - 32px)}
+.toast{position:fixed;left:50%;bottom:28px;transform:translate(-50%,160%);background:var(--navy);color:#fff;padding:14px 20px;border-radius:14px;font-weight:600;z-index:120;transition:transform .4s cubic-bezier(.3,1.4,.5,1);max-width:calc(100% - 32px);font-size:.9rem}
 .toast.mostrar{transform:translate(-50%,0)}
 
-/* revelar ao rolar */
 .revela{opacity:0;transform:translateY(30px);transition:opacity .8s,transform .8s}
 .revela.visivel{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.revela{opacity:1;transform:none}}
 
-/* ---------- responsivo ---------- */
+@media (max-width:1060px){.beneficios{grid-template-columns:repeat(3,1fr)}}
 @media (max-width:960px){
   .menu{display:none}
-  .hero .container,.casa-wrap,.ad-grid,.produto-grid,.calc-card{grid-template-columns:1fr}
-  .hero-produto{min-height:340px;order:-1}
-  .hero{padding-top:100px}
+  .hero .container,.casa-wrap,.produto-grid,.calc-card,.obras{grid-template-columns:1fr}
+  .hero-produto{min-height:0;order:-1;margin-top:10px}
+  .foto-produto{width:110%}
+  .hero{padding-top:96px}
   .galeria{position:relative;top:0}
   .passos{grid-template-columns:1fr 1fr}
+  .beneficios{grid-template-columns:1fr 1fr}
   .abas-areas{display:flex}
 }
 @media (max-width:560px){
   .secao{padding:70px 0}
-  .passos,.beneficios{grid-template-columns:1fr}
+  .passos,.linhas{grid-template-columns:1fr}
+  .linhas{gap:22px}
+  .beneficio:last-child{grid-column:1/-1}
   .calc-form,.calc-resultado,.painel{padding:24px}
   .cta-final{padding:36px 24px}
+  .cta-final .btn{width:100%}
   .comprar-linha{flex-direction:column}
+  .chip-flutuante{font-size:.7rem;padding:8px 10px}
   .chip-1{left:0}.chip-2{right:0}
   .hero-ctas .btn{flex:1}
+  .logo small{display:none}
 }
 </style>
 </head>
 <body>
 
-<!-- ============ TOPO ============ -->
 <header class="topo" id="topo">
   <div class="container">
     <a class="logo" href="#inicio">
-      <span class="logo-marca"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7"/><path d="M6 10v9h12v-9"/></svg></span>
-      <span data-marca>Telhadista ABC</span>
+      <span class="logo-marca"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7"/><path d="M12 13c2 2.6 3 4 3 5.2a3 3 0 01-6 0c0-1.2 1-2.6 3-5.2z" fill="#fff" stroke="none"/></svg></span>
+      <span><span data-marca>O Telhadista ABC</span><small>IMPERMEABILIZANTES</small></span>
     </a>
     <nav class="menu" aria-label="Seções">
       <a href="#solucoes">Onde usar</a>
-      <a href="#produto">Produto</a>
+      <a href="#resultados">Resultados</a>
+      <a href="#produto">Comprar</a>
       <a href="#calculadora">Calculadora</a>
-      <a href="#como-aplicar">Como aplicar</a>
       <a href="#duvidas">Dúvidas</a>
     </nav>
     <button class="carrinho-btn" id="abrirCarrinho" aria-label="Abrir carrinho">
@@ -358,33 +388,33 @@ footer .container{display:flex;justify-content:space-between;gap:24px;flex-wrap:
   <div class="chuva" id="chuva" aria-hidden="true"></div>
   <div class="container">
     <div>
-      <span class="eyebrow">Lançamento · Marca própria</span>
-      <h1>Infiltração nunca mais.<br><em>Proteção total</em> do telhado à fundação.</h1>
-      <p class="lead">O impermeabilizante <strong data-nome>Telhadista ABC</strong> foi desenvolvido por quem sobe no telhado todo dia. Forma uma membrana elástica e contínua que veda laje, telhado, parede, caixa d'água e áreas molhadas.</p>
+      <span class="eyebrow">Impermeabilização · Linha própria</span>
+      <h1>Super Borracha <em>Líquida.</em></h1>
+      <p class="frase">Nossa experiência em telhados. Agora na sua obra.</p>
+      <p class="lead">Uma película elástica e contínua que envelopa o telhado, a laje, a calha, a parede e a caixa d'água. É o mesmo produto que a nossa equipe usa nas obras, agora com entrega na sua casa.</p>
       <div class="hero-ctas">
-        <a href="#produto" class="btn btn-primario">Comprar agora
+        <a href="#produto" class="btn btn-primario">COMPRAR AGORA
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        <a href="#solucoes" class="btn btn-fantasma">Descobrir onde usar</a>
+        <a href="#solucoes" class="btn btn-fantasma">Onde posso usar?</a>
       </div>
       <div class="selos">
-        <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6z"/></svg> Membrana elástica</span>
-        <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5L19 19M5 19l1.5-1.5M17.5 6.5L19 5"/></svg> Resistente a sol e chuva</span>
-        <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M3 7h13v10H3zM16 10h4l1 3v4h-5"/><circle cx="7" cy="18" r="1.6"/><circle cx="18" cy="18" r="1.6"/></svg> Entrega rápida no ABC</span>
+        <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M3 8h18M7 4L3 8l4 4M17 4l4 4-4 4"/><path d="M5 18c1.5-2 3-2 4.5 0s3 2 4.5 0 3-2 4.5 0"/></svg> Alta elasticidade</span>
+        <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 3s6 6.5 6 11a6 6 0 01-12 0c0-4.5 6-11 6-11z"/></svg> Base água</span>
+        <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M3 7h13v10H3zM16 10h4l1 3v4h-5"/><circle cx="7" cy="18" r="1.6"/><circle cx="18" cy="18" r="1.6"/></svg> Entrega no Grande ABC</span>
       </div>
     </div>
     <div class="hero-produto">
-      <div class="escudo"></div>
-      <div class="balde" data-balde></div>
-      <div class="chip-flutuante chip-1"><span class="chip-icone"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4"><path d="M12 3s6 6.5 6 11a6 6 0 01-12 0c0-4.5 6-11 6-11z"/></svg></span><div><b>100%</b>impermeável</div></div>
-      <div class="chip-flutuante chip-2"><span class="chip-icone" style="background:var(--telha)"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4"><path d="M4 12h16M12 4v16"/></svg></span><div><b data-durabilidade>Anos</b>de proteção</div></div>
+      <img class="foto-produto" src="img/super-borracha-liquida.jpg" alt="Balde de 20 kg da Super Borracha Líquida, de O Telhadista ABC" width="1179" height="792">
+      <div class="chip-flutuante chip-1"><span class="chip-icone"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2"><path d="M10 14V5a2 2 0 114 0v9a4 4 0 11-4 0z"/></svg></span><div><b>Até 6 °C*</b>a menos no ambiente</div></div>
+      <div class="chip-flutuante chip-2"><span class="chip-icone"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg></span><div><b>Até 10 anos*</b>a mais de vida útil</div></div>
     </div>
   </div>
 </section>
 
 <div class="faixa" aria-hidden="true">
   <div class="faixa-trilho">
-    <span>Laje</span><span>Telhado</span><span>Parede e fachada</span><span>Caixa d'água</span><span>Banheiro e cozinha</span><span>Calhas e rufos</span><span>Baldrame</span><span>Marquises</span>
-    <span>Laje</span><span>Telhado</span><span>Parede e fachada</span><span>Caixa d'água</span><span>Banheiro e cozinha</span><span>Calhas e rufos</span><span>Baldrame</span><span>Marquises</span>
+    <span>Telhados</span><span>Lajes</span><span>Calhas</span><span>Paredes</span><span>Caixa d'água</span><span>Áreas molhadas</span><span>Baldrame</span><span>Marquises</span>
+    <span>Telhados</span><span>Lajes</span><span>Calhas</span><span>Paredes</span><span>Caixa d'água</span><span>Áreas molhadas</span><span>Baldrame</span><span>Marquises</span>
   </div>
 </div>
 
@@ -392,10 +422,10 @@ footer .container{display:flex;justify-content:space-between;gap:24px;flex-wrap:
 <section class="secao" id="solucoes">
   <div class="container">
     <span class="eyebrow">Onde está o seu problema?</span>
-    <h2 class="secao-titulo revela">Toque em cada ponto da casa</h2>
-    <p class="secao-sub revela">Veja como o impermeabilizante resolve a infiltração em cada parte do imóvel, e use o botão <b>Com proteção</b> para ver a diferença.</p>
+    <h2 class="secao-titulo revela">Toque em cada <em>ponto da casa</em></h2>
+    <p class="secao-sub revela">Veja como a Super Borracha Líquida resolve a infiltração em cada parte do imóvel. Use o botão <b>Com proteção</b> para ver a diferença.</p>
 
-    <div class="abas-areas" id="abasAreas" role="tablist" aria-label="Áreas da casa"></div>
+    <div class="abas-areas" id="abasAreas" aria-label="Áreas da casa"></div>
 
     <div class="casa-wrap revela">
       <div class="casa-palco" id="palco">
@@ -404,114 +434,83 @@ footer .container{display:flex;justify-content:space-between;gap:24px;flex-wrap:
           <button data-modo="com">Com proteção</button>
         </div>
         <svg viewBox="0 0 800 540" role="img" aria-label="Ilustração de uma casa com os pontos de infiltração">
-          <!-- chuva -->
           <g class="chuva-svg" id="chuvaSvg"></g>
-          <!-- sol / nuvem -->
           <g opacity=".9"><ellipse cx="690" cy="80" rx="60" ry="24" fill="#fff"/><ellipse cx="655" cy="70" rx="34" ry="26" fill="#fff"/><ellipse cx="715" cy="64" rx="30" ry="22" fill="#fff"/></g>
-          <!-- solo -->
           <rect x="0" y="452" width="800" height="88" fill="#8a6b4a"/>
           <rect x="0" y="446" width="800" height="12" fill="#6fae5a"/>
-          <!-- baldrame -->
           <rect x="130" y="440" width="560" height="22" fill="#9aa4ad"/>
           <path class="mancha" d="M150 440 q30 -26 70 -10 q40 -20 70 0 v12 h-140z"/>
           <line class="pelicula" x1="132" y1="451" x2="688" y2="451"/>
-          <!-- corpo da casa -->
           <rect x="140" y="250" width="380" height="192" fill="#f3ebe0"/>
           <rect x="140" y="250" width="380" height="192" fill="none" stroke="#d8cbb9" stroke-width="2"/>
-          <!-- mancha parede -->
           <path class="mancha" d="M170 300 q20 -18 40 0 q22 10 18 40 q-4 30 -24 34 q-30 4 -38 -26 q-8 -26 4 -48z"/>
           <line class="pelicula" x1="143" y1="262" x2="143" y2="438"/>
-          <!-- janela -->
-          <rect x="250" y="292" width="70" height="60" rx="4" fill="#9fd3ec" stroke="#fff" stroke-width="5"/>
+          <rect x="250" y="292" width="70" height="60" rx="4" fill="#9fc6ec" stroke="#fff" stroke-width="5"/>
           <line x1="285" y1="292" x2="285" y2="352" stroke="#fff" stroke-width="4"/>
-          <!-- porta -->
           <rect x="360" y="330" width="60" height="112" rx="4" fill="#a8693d"/>
           <circle cx="408" cy="388" r="4" fill="#f6d27a"/>
-          <!-- banheiro (corte) -->
-          <rect x="440" y="300" width="72" height="140" fill="#dff1f8" stroke="#bfe0ee" stroke-width="2"/>
+          <rect x="440" y="300" width="72" height="140" fill="#e1ecf8" stroke="#c4d7ee" stroke-width="2"/>
           <path d="M460 318 h22 v6 h-22z M471 324 v10" stroke="#7a8b99" stroke-width="3" fill="#7a8b99"/>
-          <g fill="#68b8dc"><circle cx="465" cy="345" r="2.4"/><circle cx="472" cy="352" r="2.4"/><circle cx="479" cy="345" r="2.4"/><circle cx="468" cy="360" r="2.4"/><circle cx="477" cy="362" r="2.4"/></g>
-          <rect x="446" y="425" width="60" height="8" fill="#bfe0ee"/>
+          <g fill="#6ea6dc"><circle cx="465" cy="345" r="2.4"/><circle cx="472" cy="352" r="2.4"/><circle cx="479" cy="345" r="2.4"/><circle cx="468" cy="360" r="2.4"/><circle cx="477" cy="362" r="2.4"/></g>
+          <rect x="446" y="425" width="60" height="8" fill="#c4d7ee"/>
           <path class="mancha" d="M446 433 q30 18 60 0 v4 h-60z"/>
           <line class="pelicula" x1="444" y1="434" x2="508" y2="434"/>
-          <!-- telhado -->
           <polygon points="118,256 330,120 542,256" fill="#c4562a"/>
           <g stroke="#a8461f" stroke-width="2" opacity=".7">
             <line x1="160" y1="230" x2="500" y2="230"/><line x1="200" y1="204" x2="460" y2="204"/><line x1="240" y1="178" x2="420" y2="178"/><line x1="282" y1="152" x2="378" y2="152"/>
           </g>
           <polyline class="pelicula" points="122,252 330,124 538,252"/>
-          <!-- calha -->
           <rect x="108" y="254" width="40" height="10" rx="3" fill="#8e99a3"/>
           <rect x="112" y="262" width="8" height="150" fill="#8e99a3"/>
           <circle class="gota-svg vazamento" cx="130" cy="268" r="4"/>
           <line class="pelicula" x1="110" y1="259" x2="146" y2="259"/>
-          <!-- vazamento telhado p/ dentro -->
           <circle class="gota-svg vazamento" cx="300" cy="262" r="4" style="animation-delay:.5s"/>
-          <!-- anexo com laje -->
           <rect x="520" y="300" width="170" height="142" fill="#ece2d4" stroke="#d8cbb9" stroke-width="2"/>
           <rect x="512" y="288" width="186" height="16" fill="#b9c2ca"/>
           <path class="mancha" d="M560 304 q24 20 50 4 q20 16 40 -2 v6 q-40 30 -90 0z"/>
           <line class="pelicula" x1="514" y1="289" x2="696" y2="289"/>
           <circle class="gota-svg vazamento" cx="600" cy="312" r="4" style="animation-delay:.9s"/>
-          <rect x="570" y="340" width="70" height="50" rx="4" fill="#9fd3ec" stroke="#fff" stroke-width="5"/>
-          <!-- caixa d'água -->
-          <path d="M578 228 h70 l-6 58 h-58z" fill="#2a7fb8"/>
-          <ellipse cx="613" cy="228" rx="35" ry="9" fill="#3b95cf"/>
-          <rect x="604" y="214" width="18" height="10" rx="2" fill="#1f6798"/>
+          <rect x="570" y="340" width="70" height="50" rx="4" fill="#9fc6ec" stroke="#fff" stroke-width="5"/>
+          <path d="M578 228 h70 l-6 58 h-58z" fill="#2a63b8"/>
+          <ellipse cx="613" cy="228" rx="35" ry="9" fill="#3b7bcf"/>
+          <rect x="604" y="214" width="18" height="10" rx="2" fill="#1f4f98"/>
           <path class="mancha" d="M586 262 q12 10 24 0 q12 10 24 0 l-2 20 h-44z"/>
           <path class="pelicula" d="M580 232 l5 52 h56 l5 -52"/>
           <circle class="gota-svg vazamento" cx="640" cy="290" r="3.5" style="animation-delay:1.2s"/>
-
-          <!-- hotspots -->
           <g id="hotspots"></g>
         </svg>
-        <div class="dica-palco">Toque nos círculos laranja</div>
+        <div class="dica-palco">Toque nos círculos vermelhos</div>
       </div>
-
       <aside class="painel" id="painel" aria-live="polite"></aside>
     </div>
   </div>
 </section>
 
-<!-- ============ ANTES x DEPOIS ============ -->
-<section class="secao antes-depois">
-  <div class="container ad-grid">
-    <div>
-      <span class="eyebrow">Arraste e compare</span>
-      <h2 class="secao-titulo revela">Da mancha de umidade à parede seca</h2>
-      <p class="secao-sub revela">A membrana penetra nos poros, cobre trincas capilares e acompanha a dilatação da estrutura. A água não entra, e o mofo, o descascado e a goteira desaparecem.</p>
-      <div class="beneficios revela">
-        <div class="beneficio"><b>Elástico</b><span>Acompanha a dilatação sem trincar</span></div>
-        <div class="beneficio"><b>Térmico</b><span>Versão branca reflete o sol e refresca o ambiente</span></div>
-        <div class="beneficio"><b>Base água</b><span>Sem cheiro forte, fácil de limpar</span></div>
-        <div class="beneficio"><b>Fácil de aplicar</b><span>Rolo, trincha ou pincel, sem maçarico</span></div>
+<!-- ============ BENEFÍCIOS + OBRAS ============ -->
+<section class="secao escuro" id="resultados">
+  <div class="container">
+    <span class="eyebrow">Por que usar</span>
+    <h2 class="secao-titulo revela">Proteção que <em>dura</em> e cara de telhado novo</h2>
+    <div class="beneficios">
+      <div class="beneficio revela"><div class="ic"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M12 6v4M10.8 7h2.2"/><path d="M3 17l5-3h5l-2 2h-3M8 19h7l6-4"/></svg></div><h3>Custo-benefício</h3><p>Protege e recupera a cobertura sem trocar o telhado.</p></div>
+      <div class="beneficio revela"><div class="ic"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round"><path d="M10 14V5a2 2 0 114 0v9a4 4 0 11-4 0z"/><path d="M18 4v4M16 6h4"/></svg></div><h3>Até 6 °C menos*</h3><p>Contribui para o conforto térmico e acústico.</p></div>
+      <div class="beneficio revela"><div class="ic"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg></div><h3>Mais vida útil*</h3><p>Pode prolongar a vida do telhado em até 10 anos.</p></div>
+      <div class="beneficio revela"><div class="ic"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round"><path d="M4 12l8-7 8 7M6 10v9h12v-9M10 19v-5h4v5"/></svg></div><h3>Aparência renovada</h3><p>Revigora o acabamento das telhas.</p></div>
+      <div class="beneficio revela"><div class="ic"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round"><path d="M5 7h14M9 7V4h6v3M7 7l1 13h8l1-13M11 11v6M13 11v6"/></svg></div><h3>Menos entulho</h3><p>Aproveita a cobertura existente e reduz os resíduos da obra.</p></div>
+    </div>
+
+    <div class="obras">
+      <figure class="obra revela"><img src="img/obra-chamine.jpg" alt="Telhado cerâmico com parte já coberta pela Super Borracha Líquida em terracota, ao redor da chaminé" loading="lazy" width="1082" height="1437"><figcaption><b>01</b>Acabamento em volta do duto da chaminé</figcaption></figure>
+      <div class="obras-lado">
+        <figure class="obra revela"><img src="img/obra-area-gourmet.jpg" alt="Antes e depois do telhado da área gourmet: telhas escurecidas à esquerda e telhas cinza renovadas à direita" loading="lazy" width="1082" height="636"><figcaption><b>02</b>Cobertura sobre a área gourmet</figcaption></figure>
+        <div class="bidim revela">
+          <span>Técnica de Bidim</span>
+          <h3>Uma película contínua que envelopa o telhado.</h3>
+          <p>Nos pontos críticos (cumeeiras, rufos, cantos e emendas), a borracha é reforçada com manta Bidim entre as demãos. O resultado é uma camada única, sem emendas, que acompanha a dilatação das telhas.</p>
+        </div>
       </div>
     </div>
-    <div class="comparador revela" id="comparador" role="slider" aria-label="Comparar antes e depois" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" tabindex="0">
-      <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-        <defs>
-          <filter id="ruido"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2"/><feColorMatrix values="0 0 0 0 .4  0 0 0 0 .35  0 0 0 0 .3  0 0 0 .35 0"/><feComposite in2="SourceGraphic" operator="in"/></filter>
-          <radialGradient id="mofo" cx=".5" cy=".4" r=".6"><stop offset="0" stop-color="#4b3e2c" stop-opacity=".85"/><stop offset=".6" stop-color="#6b5a3e" stop-opacity=".55"/><stop offset="1" stop-color="#8a7a5c" stop-opacity="0"/></radialGradient>
-        </defs>
-        <rect width="400" height="300" fill="#d9cdb8"/>
-        <rect width="400" height="300" fill="#d9cdb8" filter="url(#ruido)"/>
-        <ellipse cx="150" cy="90" rx="150" ry="110" fill="url(#mofo)"/>
-        <ellipse cx="290" cy="60" rx="90" ry="70" fill="url(#mofo)"/>
-        <path d="M120 0 l10 60 l-16 40 l20 50 M300 0 l-8 50 l14 30" stroke="#5a4a35" stroke-width="2" fill="none" opacity=".6"/>
-        <g fill="#efe6d6" opacity=".9"><path d="M60 150 q20 -10 40 4 l-6 22 q-20 6 -34 -6z"/><path d="M230 120 q16 -6 28 6 l-6 16 q-16 2 -22 -8z"/></g>
-        <rect y="262" width="400" height="38" fill="#b3a68f"/>
-      </svg>
-      <svg class="depois" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-        <defs><linearGradient id="brilho" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#eef4f7"/></linearGradient></defs>
-        <rect width="400" height="300" fill="url(#brilho)"/>
-        <path d="M-20 60 L120 -20 M40 300 L300 -20 M220 300 L440 40" stroke="#fff" stroke-width="22" opacity=".7"/>
-        <g fill="#1aa7d6" opacity=".85"><path d="M330 120 q5 8 5 12 a5 5 0 01-10 0 q0 -4 5 -12z"/><path d="M350 150 q4 7 4 10 a4 4 0 01-8 0 q0 -3 4 -10z"/></g>
-        <rect y="262" width="400" height="38" fill="#c9d4db"/>
-      </svg>
-      <span class="rotulo a">Antes</span><span class="rotulo d">Depois</span>
-      <div class="divisor"></div>
-      <div class="alca"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M9 6l-6 6 6 6M15 6l6 6-6 6"/></svg></div>
-    </div>
+    <p class="nota">*Valores de referência. O resultado varia conforme o tipo de telhado, a cor escolhida, a região e a aplicação.</p>
   </div>
 </section>
 
@@ -519,15 +518,18 @@ footer .container{display:flex;justify-content:space-between;gap:24px;flex-wrap:
 <section class="secao" id="produto">
   <div class="container">
     <span class="eyebrow">Loja oficial</span>
-    <h2 class="secao-titulo revela">Escolha o seu</h2>
+    <h2 class="secao-titulo revela">Escolha a <em>sua linha</em></h2>
+    <div class="linhas" id="linhas"></div>
     <div class="produto-grid">
-      <div class="galeria revela">
-        <span class="tag-desc" id="tagPix"></span>
-        <div class="balde" data-balde id="baldeLoja"></div>
+      <div class="galeria revela" id="galeria">
+        <span class="tag" id="tagPix"></span>
+        <i class="amostra" id="amostra" aria-hidden="true"></i>
+        <img id="fotoLoja" src="img/super-borracha-liquida.jpg" alt="Balde da Super Borracha Líquida" width="1179" height="792">
+        <div class="aviso-premium" id="avisoPremium"></div>
       </div>
       <div class="produto-info revela">
-        <h3 data-nome>Telhadista ABC</h3>
-        <div class="estrelas" aria-hidden="true">★★★★★</div>
+        <h3 id="nomeLinha"></h3>
+        <p class="desc" id="descLinha"></p>
         <div class="preco-bloco">
           <span class="preco" id="preco">R$ 0,00</span>
           <span class="preco-antigo" id="precoAntigo"></span>
@@ -546,13 +548,13 @@ footer .container{display:flex;justify-content:space-between;gap:24px;flex-wrap:
             <input id="qtd" type="number" value="1" min="1" aria-label="Quantidade">
             <button id="mais" aria-label="Aumentar">+</button>
           </div>
-          <button class="btn btn-primario" id="adicionar">Adicionar ao carrinho</button>
+          <button class="btn btn-primario" id="adicionar">ADICIONAR AO CARRINHO</button>
         </div>
 
         <div class="garantias">
-          <div><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6z"/><path d="M9 12l2 2 4-4"/></svg>Compra segura</div>
+          <div><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6z"/><path d="M9 12l2 2 4-4"/></svg>Marca própria</div>
           <div><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7h13v10H3zM16 10h4l1 3v4h-5"/><circle cx="7" cy="18" r="1.6"/><circle cx="18" cy="18" r="1.6"/></svg>Entrega no ABC</div>
-          <div><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a9 9 0 01-13.5 7.8L3 21l1.2-4.5A9 9 0 1121 12z"/></svg>Suporte técnico</div>
+          <div><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 4h6v3H9zM7 6H5v15h14V6h-2M8 12h8M8 16h5"/></svg>Orientação técnica</div>
         </div>
 
         <dl class="specs" id="specs"></dl>
@@ -565,8 +567,8 @@ footer .container{display:flex;justify-content:space-between;gap:24px;flex-wrap:
 <section class="secao calc" id="calculadora">
   <div class="container">
     <span class="eyebrow">Calculadora</span>
-    <h2 class="secao-titulo revela">Quanto você precisa?</h2>
-    <p class="secao-sub revela">Informe a área e o tipo de superfície. A calculadora monta o kit mais econômico para você.</p>
+    <h2 class="secao-titulo revela">Quantos baldes <em>você precisa?</em></h2>
+    <p class="secao-sub revela">Informe a área e o tipo de superfície. A calculadora monta o kit e coloca direto no carrinho.</p>
     <div class="calc-card revela">
       <div class="calc-form">
         <div class="campo">
@@ -576,34 +578,38 @@ footer .container{display:flex;justify-content:space-between;gap:24px;flex-wrap:
         <div class="campo">
           <label>Medidas (metros)</label>
           <div class="medidas">
-            <input id="comp" type="number" min="0" step="0.1" placeholder="Comprimento" inputmode="decimal">
+            <input id="comp" type="number" min="0" step="0.1" placeholder="Comprimento" inputmode="decimal" aria-label="Comprimento">
             <span>×</span>
-            <input id="larg" type="number" min="0" step="0.1" placeholder="Largura" inputmode="decimal">
+            <input id="larg" type="number" min="0" step="0.1" placeholder="Largura" inputmode="decimal" aria-label="Largura">
           </div>
         </div>
         <div class="ou">ou</div>
         <div class="campo">
           <label for="area">Área total (m²)</label>
-          <input id="area" type="number" min="0" step="1" value="30" inputmode="decimal">
+          <input id="area" type="number" min="0" step="1" value="60" inputmode="decimal">
+        </div>
+        <div class="campo">
+          <label>Linha</label>
+          <div class="botoes-opcao" id="calcLinha"></div>
         </div>
         <div class="campo">
           <label>Número de demãos</label>
-          <div class="demaos" id="demaos">
+          <div class="botoes-opcao" id="demaos">
             <button data-d="2">2</button><button data-d="3" class="ativo">3 (recomendado)</button><button data-d="4">4</button>
           </div>
         </div>
       </div>
       <div class="calc-resultado" aria-live="polite">
-        <span class="eyebrow" style="color:var(--agua-claro)">Você vai precisar de</span>
-        <div class="litros"><span id="litros">0</span><small> litros</small></div>
+        <span class="eyebrow">Você vai precisar de</span>
+        <div class="quantidade"><span id="quantidade">0</span><small id="unidadeCalc"> kg</small></div>
         <div class="calc-detalhe" id="calcDetalhe"></div>
         <div class="kit" id="kit"></div>
         <div>
           <div class="medidor"><div id="medidor" style="width:0"></div></div>
           <small style="opacity:.6" id="sobra"></small>
         </div>
-        <div class="kit-total" style="margin-top:20px"><span>Total do kit</span><b id="kitTotal">R$ 0,00</b></div>
-        <button class="btn btn-primario btn-bloco" id="addKit">Adicionar kit ao carrinho</button>
+        <div class="kit-total"><span>Total do kit</span><b id="kitTotal">R$ 0,00</b></div>
+        <button class="btn btn-primario btn-bloco" id="addKit">ADICIONAR KIT AO CARRINHO</button>
       </div>
     </div>
   </div>
@@ -613,12 +619,12 @@ footer .container{display:flex;justify-content:space-between;gap:24px;flex-wrap:
 <section class="secao" id="como-aplicar">
   <div class="container">
     <span class="eyebrow">Passo a passo</span>
-    <h2 class="secao-titulo revela">Aplicação simples, resultado profissional</h2>
+    <h2 class="secao-titulo revela">Aplicação simples, <em>resultado de profissional</em></h2>
     <div class="passos">
-      <div class="passo revela"><h3>Limpe</h3><p>Remova poeira, limo, partes soltas e impermeabilizações antigas descascando. A superfície deve estar firme e seca.</p></div>
-      <div class="passo revela"><h3>Trate as trincas</h3><p>Abra e preencha fissuras. Em cantos, ralos e emendas, reforce com tela de poliéster entre as demãos.</p></div>
-      <div class="passo revela"><h3>Aplique</h3><p>Use rolo de lã ou trincha. A primeira demão pode ser diluída com água. As demais vão em sentido cruzado.</p></div>
-      <div class="passo revela"><h3>Aguarde a cura</h3><p>Espere secar entre as demãos e respeite a cura total antes de liberar o tráfego ou encher a caixa d'água.</p></div>
+      <div class="passo revela"><h3>Limpe</h3><p>Lave e tire o limo, a poeira e as partes soltas. A superfície precisa estar firme e seca.</p></div>
+      <div class="passo revela"><h3>Reforce os pontos críticos</h3><p>Em cumeeiras, rufos, cantos, ralos e trincas, aplique a manta Bidim entre a primeira e a segunda demão.</p></div>
+      <div class="passo revela"><h3>Aplique</h3><p>Use rolo, trincha ou pincel. Passe as demãos em sentido cruzado, respeitando a secagem entre elas.</p></div>
+      <div class="passo revela"><h3>Aguarde a cura</h3><p>Espere a cura total antes de liberar o tráfego ou encher a caixa d'água. Na dúvida, fale com a nossa equipe.</p></div>
     </div>
   </div>
 </section>
@@ -627,17 +633,17 @@ footer .container{display:flex;justify-content:space-between;gap:24px;flex-wrap:
 <section class="secao" style="padding-top:0">
   <div class="container">
     <span class="eyebrow">Comparativo</span>
-    <h2 class="secao-titulo revela">Por que escolher a manta líquida?</h2>
+    <h2 class="secao-titulo revela">Por que a <em>borracha líquida?</em></h2>
     <div class="tabela-wrap revela">
       <table>
-        <thead><tr><th></th><th class="nosso" data-nome>Telhadista ABC</th><th>Manta asfáltica</th><th>Tinta comum</th></tr></thead>
+        <thead><tr><th></th><th class="nosso">Super Borracha Líquida</th><th>Manta asfáltica</th><th>Tinta comum</th><th>Trocar o telhado</th></tr></thead>
         <tbody>
-          <tr><td>Aplicação sem maçarico</td><td class="nosso sim">✓</td><td class="nao">✕</td><td class="sim">✓</td></tr>
-          <tr><td>Sem emendas</td><td class="nosso sim">✓</td><td class="nao">✕</td><td class="sim">✓</td></tr>
-          <tr><td>Veda trincas e acompanha dilatação</td><td class="nosso sim">✓</td><td class="sim">✓</td><td class="nao">✕</td></tr>
-          <tr><td>Reflete o calor (versão branca)</td><td class="nosso sim">✓</td><td class="nao">✕</td><td>Parcial</td></tr>
-          <tr><td>Você mesmo aplica</td><td class="nosso sim">✓</td><td class="nao">✕</td><td class="sim">✓</td></tr>
-          <tr><td>Impermeabiliza de verdade</td><td class="nosso sim">✓</td><td class="sim">✓</td><td class="nao">✕</td></tr>
+          <tr><td>Aplicação sem maçarico</td><td class="nosso sim">✓</td><td class="nao">✕</td><td class="sim">✓</td><td>—</td></tr>
+          <tr><td>Película contínua, sem emendas</td><td class="nosso sim">✓</td><td class="nao">✕</td><td class="sim">✓</td><td>—</td></tr>
+          <tr><td>Resiste a microfissuras e dilatação</td><td class="nosso sim">✓</td><td class="sim">✓</td><td class="nao">✕</td><td>—</td></tr>
+          <tr><td>Conforto térmico e acústico</td><td class="nosso sim">✓</td><td class="nao">✕</td><td class="nao">✕</td><td>Depende</td></tr>
+          <tr><td>Aproveita a cobertura existente</td><td class="nosso sim">✓</td><td class="sim">✓</td><td class="sim">✓</td><td class="nao">✕</td></tr>
+          <tr><td>Pouco entulho</td><td class="nosso sim">✓</td><td class="sim">✓</td><td class="sim">✓</td><td class="nao">✕</td></tr>
         </tbody>
       </table>
     </div>
@@ -648,28 +654,21 @@ footer .container{display:flex;justify-content:space-between;gap:24px;flex-wrap:
 <section class="secao" id="duvidas" style="padding-top:0">
   <div class="container">
     <span class="eyebrow">Dúvidas frequentes</span>
-    <h2 class="secao-titulo revela">Perguntas que sempre recebemos</h2>
-    <div class="faq">
-      <details><summary>Posso aplicar sobre o telhado de telha cerâmica ou fibrocimento?</summary><p>Sim. Em telhas de fibrocimento e cerâmicas, o produto veda trincas, furos de parafuso e emendas. Limpe bem o limo antes. Em telhados muito danificados, recomendamos uma vistoria da nossa equipe.</p></details>
-      <details><summary>Serve para dentro da caixa d'água?</summary><p>Confirme na ficha técnica e no rótulo se a versão é indicada para contato com água potável. Após a cura total, lave a caixa antes de encher.</p></details>
-      <details><summary>Quantas demãos preciso passar?</summary><p>Recomendamos 3 demãos cruzadas para lajes e áreas expostas. Em paredes verticais, 2 demãos costumam ser suficientes. A calculadora já considera isso.</p></details>
-      <details><summary>Quanto tempo leva para secar?</summary><p>O tempo entre demãos e a cura total variam com a temperatura e a umidade. Siga as orientações do rótulo e evite aplicar com previsão de chuva nas próximas horas.</p></details>
-      <details><summary>Vocês aplicam para mim?</summary><p>Sim! Além de vender o produto, a <span data-marca>Telhadista ABC</span> faz a aplicação com equipe própria. Chame no WhatsApp para um orçamento.</p></details>
-      <details><summary>Como funciona a entrega?</summary><p>Entregamos em todo o Grande ABC. Digite seu CEP no carrinho para ver as condições. Para outras regiões, combinamos o frete pelo WhatsApp.</p></details>
-    </div>
+    <h2 class="secao-titulo revela">Perguntas que <em>sempre recebemos</em></h2>
+    <div class="faq" id="faq"></div>
   </div>
 </section>
 
 <div class="container">
   <div class="cta-final revela">
-    <h2>Prefere que a gente resolva? Nossa equipe aplica para você.</h2>
-    <a class="btn" id="ctaOrcamento" target="_blank" rel="noopener">Pedir orçamento no WhatsApp</a>
+    <h2>Prefere que a gente faça? <em>Nossa equipe aplica</em> para você.</h2>
+    <a class="btn btn-primario" id="ctaOrcamento" target="_blank" rel="noopener">AVALIAR MEU TELHADO →</a>
   </div>
 </div>
 
 <footer>
   <div class="container">
-    <div><b style="color:#fff;font-family:Sora" data-marca>Telhadista ABC</b><br>Telhados, impermeabilização e reformas.</div>
+    <div><b style="color:#fff" data-marca>O Telhadista ABC</b><br>Telhados, coberturas e impermeabilização.</div>
     <div id="rodapeContato"></div>
   </div>
 </footer>
@@ -680,7 +679,7 @@ footer .container{display:flex;justify-content:space-between;gap:24px;flex-wrap:
   <div class="gaveta-topo"><h3>Seu carrinho</h3><button class="fechar" id="fecharCarrinho" aria-label="Fechar">×</button></div>
   <div class="gaveta-corpo" id="itens"></div>
   <div class="gaveta-rodape" id="rodapeCarrinho">
-    <div class="cep-linha"><input id="cep" placeholder="Seu CEP" inputmode="numeric" maxlength="9"><button id="calcFrete">Frete</button></div>
+    <div class="cep-linha"><input id="cep" placeholder="Seu CEP" inputmode="numeric" maxlength="9" aria-label="CEP"><button id="calcFrete">Frete</button></div>
     <div class="frete-msg" id="freteMsg"></div>
     <div class="linha-total"><span>Subtotal</span><span id="subtotal">R$ 0,00</span></div>
     <div class="linha-total"><span>Frete</span><span id="freteValor">—</span></div>
@@ -692,8 +691,8 @@ footer .container{display:flex;justify-content:space-between;gap:24px;flex-wrap:
       <label><input type="radio" name="pag" value="Boleto">Boleto</label>
     </div>
     <button class="btn btn-whats btn-bloco" id="finalizar">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.6-2.1-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5 2.5 1 3 .8 3.6.7.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.2-.6-.4zM12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2z"/></svg>
-      Finalizar pelo WhatsApp
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.600-2.1-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5 2.5 1 3 .8 3.6.7.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.2-.6-.4zM12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2z"/></svg>
+      FINALIZAR PELO WHATSAPP
     </button>
   </div>
 </aside>
@@ -701,65 +700,101 @@ footer .container{display:flex;justify-content:space-between;gap:24px;flex-wrap:
 <a class="whats-flutuante" id="whatsFlutuante" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
   <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.6-2.1-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5 2.5 1 3 .8 3.6.7.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.2-.6-.4zM12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2z"/></svg>
 </a>
-<div class="toast" id="toast"></div>
+<div class="toast" id="toast" role="status"></div>
 
 <script>
 /* =================================================================
-   CONFIGURAÇÃO — edite só este bloco para personalizar a loja
+   CONFIGURAÇÃO: edite só este bloco para mudar a loja
    ================================================================= */
 const CONFIG = {
-  marca: "Telhadista ABC",
-  produto: {
-    nome: "Impermeabilizante Telhadista ABC",   // nome comercial do produto
-    tipo: "Manta líquida acrílica",
-    durabilidade: "5+ anos",                     // confirme com a ficha técnica
-  },
-  whatsapp: "5511900000000",                     // DDI+DDD+número, só dígitos
-  descontoPix: 0.05,                             // 5% no PIX
-  // Embalagens: litros e preço (R$). Preços de exemplo — ajuste!
-  embalagens: [
-    { id: "g", rotulo: "Galão",  litros: 3.6, preco: 129.90, precoDe: 159.90 },
-    { id: "b", rotulo: "Balde",  litros: 18,  preco: 489.90, precoDe: 599.90 },
-    { id: "l", rotulo: "Lata",   litros: 0.9, preco: 44.90,  precoDe: 54.90  },
+  marca: "O Telhadista ABC",
+  instagram: "otelhadistaabc",
+  whatsapp: "5511900000000",          // TROCAR: DDI + DDD + número, só dígitos
+  descontoPix: 0.05,                  // 5% no PIX
+  unidade: "kg",
+  perda: 0.10,                        // margem de perda na calculadora
+
+  // As duas linhas de produto. Preços e consumo são EXEMPLOS: ajuste!
+  linhas: [
+    {
+      id: "tradicional",
+      nome: "Super Borracha Líquida",
+      selo: "Mais vendida",
+      resumo: "A linha que a nossa equipe usa nas obras.",
+      descricao: "Impermeabilizante de base água com alta elasticidade. Forma uma película contínua sobre telhados, lajes, calhas, paredes e caixa d'água.",
+      foto: "img/super-borracha-liquida.jpg",
+      espessura: 60,                  // barra visual (0 a 100)
+      consumoPorDemao: 0.45,          // kg por m² por demão: CONFIRMAR NA FICHA TÉCNICA
+      embalagens: [
+        { id: "t20", rotulo: "Balde", qtd: 20, preco: 389.90, precoDe: 449.90 },
+      ],
+      specs: [
+        ["Tipo", "Borracha líquida impermeabilizante"],
+        ["Base", "Água"],
+        ["Embalagem", "Balde 20 kg"],
+        ["Aplicação", "Rolo, trincha ou pincel"],
+        ["Demãos recomendadas", "3, em sentido cruzado"],
+        ["Superfícies", "Telhados, lajes, calhas, paredes, caixa d'água"],
+      ],
+    },
+    {
+      id: "premium",
+      nome: "Super Borracha Líquida Premium",
+      selo: "Lançamento",
+      novo: true,
+      resumo: "Borracha mais espessa, para quem quer a camada mais forte.",
+      descricao: "A nova linha de O Telhadista ABC: uma borracha mais espessa, que forma uma camada mais encorpada e resistente a cada demão. Ideal para lajes expostas, telhados muito castigados e áreas com trincas maiores.",
+      foto: "img/super-borracha-liquida.jpg", // TROCAR pela foto do balde novo
+      aviso: "Balde novo em produção. A foto será atualizada em breve.",
+      espessura: 100,
+      consumoPorDemao: 0.6,           // CONFIRMAR NA FICHA TÉCNICA
+      embalagens: [
+        { id: "p20", rotulo: "Balde", qtd: 20, preco: 489.90, precoDe: 559.90 },
+      ],
+      specs: [
+        ["Tipo", "Borracha líquida de alta espessura"],
+        ["Base", "Água"],
+        ["Embalagem", "Balde 20 kg"],
+        ["Diferencial", "Camada mais espessa por demão"],
+        ["Indicada para", "Lajes expostas, telhados e trincas maiores"],
+        ["Aplicação", "Rolo, trincha ou pincel"],
+      ],
+    },
   ],
   cores: [
-    { id: "branco",   nome: "Branco térmico", hex: "#f4f6f8" },
-    { id: "cinza",    nome: "Cinza",          hex: "#8d979f" },
-    { id: "ceramica", nome: "Cerâmica",       hex: "#b9532a" },
+    { id: "terracota", nome: "Terracota", hex: "#b4502f" },
+    { id: "cinza",     nome: "Cinza",     hex: "#8a939c" },
+    { id: "branco",    nome: "Branco",    hex: "#f3f4f6" },
   ],
-  // Consumo TOTAL por m² por demão (litros). Ajuste conforme a ficha técnica.
-  consumoPorDemao: 0.4,
-  perda: 0.10,                                   // margem de perda
-  // Frete
   cidadesFreteGratis: ["Santo André","São Bernardo do Campo","São Caetano do Sul","Diadema","Mauá","Ribeirão Pires","Rio Grande da Serra"],
-  freteGratisAcima: 0,                           // 0 = grátis sempre no ABC
-  freteGrandeSP: 29.90,                          // demais cidades de SP
-  specs: [
-    ["Tipo", "Manta líquida acrílica"],
-    ["Base", "Água"],
-    ["Aplicação", "Rolo, trincha ou pincel"],
-    ["Rendimento", "≈ 1 L para cada 2,5 m² por demão"],
-    ["Demãos recomendadas", "3, em sentido cruzado"],
-    ["Superfícies", "Laje, telha, parede, concreto, reboco"],
-  ],
+  freteSP: 39.90,                     // demais cidades do estado de SP
 };
 
-/* Áreas da casa (hotspots) */
 const AREAS = [
-  { id:"telhado", n:1, x:330, y:178, titulo:"Telhado", problema:"Telhas trincadas, furos de parafuso e emendas deixam a água escorrer para o forro.",
-    solucoes:["Veda trincas e furos em telha cerâmica e fibrocimento","Protege as cumeeiras e as emendas","Versão branca reduz o calor no ambiente"], demaos:3, rec:"Alta" },
-  { id:"calhas", n:2, x:128, y:236, titulo:"Calhas e rufos", problema:"Emendas e soldas da calha se abrem com o tempo, e a água volta para a parede.",
-    solucoes:["Sela as emendas metálicas","Evita ferrugem e transbordo pela parede","Aplicação rápida com trincha"], demaos:3, rec:"Média" },
-  { id:"laje", n:3, x:605, y:276, titulo:"Laje", problema:"Água empoçada penetra pelas microtrincas e aparece como goteira e mancha no teto.",
-    solucoes:["Forma uma membrana contínua, sem emendas","Acompanha a dilatação do concreto","Pode usar tela de reforço nos cantos e ralos"], demaos:4, rec:"Alta" },
-  { id:"caixa", n:4, x:613, y:200, titulo:"Caixa d'água", problema:"Caixas de concreto ou fibrocimento com fissuras perdem água e encharcam a laje.",
-    solucoes:["Veda fissuras internas e externas","Protege a estrutura que fica embaixo","Confira a indicação para água potável no rótulo"], demaos:3, rec:"Alta" },
-  { id:"parede", n:5, x:196, y:335, titulo:"Parede e fachada", problema:"Chuva de vento atravessa o reboco e causa mofo, bolhas e tinta descascando por dentro.",
-    solucoes:["Bloqueia a água de chuva na fachada","Pode receber tinta por cima","Ideal para muros e platibandas"], demaos:2, rec:"Média" },
-  { id:"banheiro", n:6, x:476, y:396, titulo:"Banheiro e áreas molhadas", problema:"Infiltração do box e da cozinha passa para o vizinho de baixo ou para o cômodo ao lado.",
-    solucoes:["Aplicação sob o piso antes do assentamento","Sobe 30 cm na parede do box","Evita quebrar tudo de novo no futuro"], demaos:3, rec:"Alta" },
-  { id:"baldrame", n:7, x:250, y:452, titulo:"Baldrame e rodapé", problema:"A umidade do solo sobe pela parede (capilaridade) e deixa o rodapé manchado e com salitre.",
+  { id:"telhado", n:1, x:330, y:178, titulo:"Telhado", problema:"Telhas trincadas, porosas ou com limo deixam a água passar para o forro e escurecem a cobertura.",
+    solucoes:["Envelopa as telhas cerâmicas e de fibrocimento","Resiste às microfissuras e à ação do tempo","Renova a aparência em terracota, cinza ou branco"], demaos:3, rec:"Alta" },
+  { id:"calhas", n:2, x:128, y:236, titulo:"Calhas e rufos", problema:"Emendas e soldas da calha se abrem com o tempo, e a água volta pela parede.",
+    solucoes:["Sela as emendas metálicas","Reforço com manta Bidim nos encontros","Evita transbordo pela parede"], demaos:3, rec:"Alta" },
+  { id:"laje", n:3, x:605, y:276, titulo:"Laje", problema:"Água empoçada entra pelas microtrincas e aparece como goteira e mancha no teto.",
+    solucoes:["Película contínua, sem emendas","Acompanha a dilatação do concreto","Para laje exposta, prefira a linha Premium"], demaos:4, rec:"Alta" },
+  { id:"caixa", n:4, x:613, y:200, titulo:"Caixa d'água", problema:"Fissuras na caixa ou na base dela encharcam a laje que fica embaixo.",
+    solucoes:["Veda fissuras na parte externa e na base","Protege a estrutura que fica embaixo","Para uso interno, consulte nossa equipe"], demaos:3, rec:"Média" },
+  { id:"parede", n:5, x:196, y:335, titulo:"Parede e muro", problema:"A chuva de vento atravessa o reboco e causa mofo, bolhas e tinta descascando por dentro.",
+    solucoes:["Bloqueia a água de chuva na fachada","Ideal para muros e platibandas","Alta elasticidade, não trinca com o sol"], demaos:2, rec:"Média" },
+  { id:"banheiro", n:6, x:476, y:396, titulo:"Áreas molhadas", problema:"A infiltração do box, da lavanderia ou da cozinha passa para o cômodo ao lado.",
+    solucoes:["Aplicação antes de assentar o piso","Sobe 30 cm na parede do box","Evita quebrar tudo de novo no futuro"], demaos:3, rec:"Alta" },
+  { id:"baldrame", n:7, x:250, y:452, titulo:"Baldrame e rodapé", problema:"A umidade do solo sobe pela parede e deixa o rodapé manchado e com salitre.",
     solucoes:["Barreira contra a umidade do solo","Protege a base da alvenaria","Indicado para obra nova e reforma"], demaos:3, rec:"Média" },
+];
+
+const FAQ = [
+  ["Qual a diferença entre a linha tradicional e a Premium?", "A Premium é uma borracha mais espessa: cada demão forma uma camada mais encorpada. Ela é indicada para lajes expostas, telhados muito castigados e trincas maiores. Para a manutenção de telhados e paredes, a tradicional atende muito bem."],
+  ["Posso aplicar em telha cerâmica e fibrocimento?", "Sim. Limpe bem o limo antes. Nos pontos críticos, como cumeeiras, rufos e emendas, use a manta Bidim para reforçar. Em telhados muito danificados, recomendamos uma avaliação da nossa equipe."],
+  ["Quais cores vocês têm?", "Terracota, cinza e branco. O branco reflete mais o sol e ajuda no conforto térmico. A terracota e o cinza renovam o visual das telhas."],
+  ["Quantas demãos preciso passar?", "Recomendamos 3 demãos cruzadas em telhados e lajes, e 2 em paredes. A calculadora já considera isso e uma margem de perda."],
+  ["Serve para caixa d'água?", "Sim, para a parte externa e a base. Para aplicar dentro da caixa, fale com a nossa equipe antes."],
+  ["Vocês aplicam para mim?", "Sim! Além de vender o produto, nossa equipe faz a avaliação e a aplicação. Chame no WhatsApp."],
+  ["Como funciona a entrega?", "Entregamos em todo o Grande ABC. Digite seu CEP no carrinho para ver as condições. Para outras regiões, combinamos o frete pelo WhatsApp."],
 ];
 
 /* ================================================================= */
@@ -767,108 +802,68 @@ const $ = s => document.querySelector(s);
 const $$ = s => [...document.querySelectorAll(s)];
 const brl = v => v.toLocaleString("pt-BR",{style:"currency",currency:"BRL"});
 const fmt = v => v.toLocaleString("pt-BR",{maximumFractionDigits:1});
+const U = CONFIG.unidade;
 const linkWhats = msg => `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(msg)}`;
 const store = {
   get(k,d){ try{ return JSON.parse(localStorage.getItem(k)) ?? d }catch{ return d } },
   set(k,v){ try{ localStorage.setItem(k,JSON.stringify(v)) }catch{} }
 };
+const linhaPor = id => CONFIG.linhas.find(l=>l.id===id);
+const embPor = (l,id) => l && l.embalagens.find(e=>e.id===id);
+const corPor = id => CONFIG.cores.find(c=>c.id===id);
 
-/* textos de marca */
-$$("[data-nome]").forEach(e=>e.textContent=CONFIG.produto.nome);
 $$("[data-marca]").forEach(e=>e.textContent=CONFIG.marca);
-$$("[data-durabilidade]").forEach(e=>e.textContent=CONFIG.produto.durabilidade);
-$("#whatsFlutuante").href = linkWhats(`Olá! Vim pelo site e quero saber mais sobre o ${CONFIG.produto.nome}.`);
-$("#ctaOrcamento").href = linkWhats(`Olá! Quero um orçamento de impermeabilização com aplicação da ${CONFIG.marca}.`);
-$("#rodapeContato").innerHTML = `WhatsApp: <a href="${linkWhats("Olá!")}" target="_blank" rel="noopener" style="color:#fff">+${CONFIG.whatsapp}</a><br>© ${new Date().getFullYear()} ${CONFIG.marca}`;
+$("#whatsFlutuante").href = linkWhats("Olá! Vim pelo site e quero saber mais sobre a Super Borracha Líquida.");
+$("#ctaOrcamento").href = linkWhats("Olá! Quero avaliar a impermeabilização do meu telhado.");
+$("#rodapeContato").innerHTML = `WhatsApp: <a href="${linkWhats("Olá!")}" target="_blank" rel="noopener">+${CONFIG.whatsapp}</a><br>Instagram: <a href="https://instagram.com/${CONFIG.instagram}" target="_blank" rel="noopener">@${CONFIG.instagram}</a><br>© ${new Date().getFullYear()} ${CONFIG.marca}`;
+$("#faq").innerHTML = FAQ.map(([p,r])=>`<details><summary>${p}</summary><p>${r}</p></details>`).join("");
 
-/* ---------- desenho do balde (SVG) ---------- */
-function baldeSVG(corHex, emb){
-  const claro = corHex.toLowerCase()==="#f4f6f8";
-  const tampa = "#0b1f33";
-  const rot = emb ? `${fmt(emb.litros)} L` : "18 L";
-  return `<svg viewBox="0 0 260 300" aria-hidden="true">
-    <defs>
-      <linearGradient id="corpo" x1="0" x2="1"><stop offset="0" stop-color="#dfe6ec"/><stop offset=".45" stop-color="#ffffff"/><stop offset="1" stop-color="#c9d3db"/></linearGradient>
-      <linearGradient id="faixaG" x1="0" x2="1"><stop offset="0" stop-color="#0b1f33"/><stop offset="1" stop-color="#12304d"/></linearGradient>
-    </defs>
-    <path d="M40 60 Q130 30 220 60" stroke="#8e99a3" stroke-width="5" fill="none"/>
-    <path d="M30 70 h200 l-18 210 q-82 18 -164 0z" fill="url(#corpo)"/>
-    <rect x="22" y="56" width="216" height="26" rx="8" fill="${tampa}"/>
-    <rect x="22" y="56" width="216" height="8" rx="4" fill="#1d3f61"/>
-    <path d="M36 110 h188 l-9 120 h-170z" fill="url(#faixaG)"/>
-    <path d="M36 110 h188 l-2 22 h-184z" fill="${corHex}" stroke="${claro?'#cfd8df':'none'}"/>
-    <g transform="translate(68 146)">
-      <path d="M0 14 L22 0 L44 14" stroke="#e2652b" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M22 18 c6 8 9 12 9 17 a9 9 0 01-18 0 c0-5 3-9 9-17z" fill="#1aa7d6"/>
-    </g>
-    <text x="140" y="160" fill="#fff" font-family="Sora" font-weight="800" font-size="15" text-anchor="middle">IMPERMEABILIZANTE</text>
-    <text x="140" y="182" fill="#7fd6f2" font-family="Inter" font-weight="700" font-size="12" text-anchor="middle" letter-spacing="2">${CONFIG.marca.toUpperCase()}</text>
-    <text x="130" y="216" fill="#fff" font-family="Inter" font-size="11" text-anchor="middle" opacity=".8">MANTA LÍQUIDA · ${rot}</text>
-    <circle cx="200" cy="252" r="16" fill="${corHex}" stroke="#fff" stroke-width="3"/>
-  </svg>`;
-}
-
-/* ---------- chuva do hero ---------- */
+/* chuva */
 (function(){
-  const c = $("#chuva"); let h="";
-  for(let i=0;i<70;i++){
-    h += `<span class="gota" style="left:${Math.random()*100}%;animation-duration:${.6+Math.random()*.9}s;animation-delay:${-Math.random()*2}s;opacity:${.25+Math.random()*.6}"></span>`;
-  }
-  c.innerHTML = h;
-  let lines="";
-  for(let i=0;i<60;i++){
-    const x=Math.random()*800, y=Math.random()*440;
-    lines += `<line x1="${x}" y1="${y}" x2="${x-6}" y2="${y+18}" style="animation-delay:${-Math.random()}s"/>`;
-  }
-  $("#chuvaSvg").innerHTML = lines;
+  let h="";
+  for(let i=0;i<60;i++) h += `<span class="gota" style="left:${Math.random()*100}%;animation-duration:${.6+Math.random()*.9}s;animation-delay:${-Math.random()*2}s;opacity:${.2+Math.random()*.5}"></span>`;
+  $("#chuva").innerHTML = h;
+  let l="";
+  for(let i=0;i<60;i++){ const x=Math.random()*800, y=Math.random()*440; l += `<line x1="${x}" y1="${y}" x2="${x-6}" y2="${y+18}" style="animation-delay:${-Math.random()}s"/>`; }
+  $("#chuvaSvg").innerHTML = l;
 })();
 
-/* ---------- topo ao rolar ---------- */
 addEventListener("scroll",()=>$("#topo").classList.toggle("rolou",scrollY>40),{passive:true});
-
-/* ---------- revela ao rolar ---------- */
 const obs = new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add("visivel"); obs.unobserve(e.target);} }),{threshold:.12});
 $$(".revela").forEach(el=>obs.observe(el));
 
 /* ---------- casa interativa ---------- */
 let areaAtual = AREAS[0];
-(function(){
-  const g = $("#hotspots");
-  g.innerHTML = AREAS.map(a=>`
-    <g class="hotspot" data-id="${a.id}" tabindex="0" role="button" aria-label="${a.titulo}" transform="translate(${a.x} ${a.y})">
-      <circle class="anel" r="16"/><circle class="nucleo" r="15"/><text>${a.n}</text>
-    </g>`).join("");
-  $("#abasAreas").innerHTML = AREAS.map(a=>`<button data-id="${a.id}">${a.n}. ${a.titulo}</button>`).join("");
-  const escolher = id => { areaAtual = AREAS.find(a=>a.id===id); renderPainel(); };
-  $$(".hotspot").forEach(h=>{
-    h.addEventListener("click",()=>escolher(h.dataset.id));
-    h.addEventListener("keydown",e=>{ if(e.key==="Enter"||e.key===" "){ e.preventDefault(); escolher(h.dataset.id);} });
-  });
-  $$("#abasAreas button").forEach(b=>b.addEventListener("click",()=>escolher(b.dataset.id)));
-  $$(".alternador button").forEach(b=>b.addEventListener("click",()=>{
-    $$(".alternador button").forEach(x=>x.classList.remove("ativo","protegido"));
-    b.classList.add("ativo");
-    const com = b.dataset.modo==="com";
-    if(com) b.classList.add("protegido");
-    $("#palco").classList.toggle("protegido",com);
-  }));
-  renderPainel();
-})();
-
+$("#hotspots").innerHTML = AREAS.map(a=>`
+  <g class="hotspot" data-id="${a.id}" tabindex="0" role="button" aria-label="${a.titulo}" transform="translate(${a.x} ${a.y})">
+    <circle class="anel" r="16"/><circle class="nucleo" r="15"/><text>${a.n}</text>
+  </g>`).join("");
+$("#abasAreas").innerHTML = AREAS.map(a=>`<button data-id="${a.id}">${a.n}. ${a.titulo}</button>`).join("");
+const escolherArea = id => { areaAtual = AREAS.find(a=>a.id===id); renderPainel(); };
+$$(".hotspot").forEach(h=>{
+  h.addEventListener("click",()=>escolherArea(h.dataset.id));
+  h.addEventListener("keydown",e=>{ if(e.key==="Enter"||e.key===" "){ e.preventDefault(); escolherArea(h.dataset.id);} });
+});
+$$("#abasAreas button").forEach(b=>b.addEventListener("click",()=>escolherArea(b.dataset.id)));
+$$(".alternador button").forEach(b=>b.addEventListener("click",()=>{
+  $$(".alternador button").forEach(x=>x.classList.remove("ativo","protegido"));
+  const com = b.dataset.modo==="com";
+  b.classList.add("ativo"); if(com) b.classList.add("protegido");
+  $("#palco").classList.toggle("protegido",com);
+}));
 function renderPainel(){
-  const a = areaAtual;
+  const a = areaAtual, l = CONFIG.linhas[0];
   $$(".hotspot").forEach(h=>h.classList.toggle("ativo",h.dataset.id===a.id));
   $$("#abasAreas button").forEach(b=>b.classList.toggle("ativo",b.dataset.id===a.id));
-  const consumo = CONFIG.consumoPorDemao*a.demaos;
   $("#painel").innerHTML = `<div class="painel-anim" style="display:flex;flex-direction:column;height:100%">
     <div class="painel-num">${a.n}</div>
     <h3>${a.titulo}</h3>
     <p class="problema">${a.problema}</p>
-    <h4>Como o produto resolve</h4>
+    <h4>Como a Super Borracha resolve</h4>
     <ul class="lista-check">${a.solucoes.map(s=>`<li>${s}</li>`).join("")}</ul>
     <div class="metricas">
       <div><b>${a.demaos}</b><small>demãos</small></div>
-      <div><b>${fmt(consumo)} L</b><small>por m²</small></div>
+      <div><b>${fmt(l.consumoPorDemao*a.demaos)} ${U}</b><small>por m²</small></div>
       <div><b>${a.rec}</b><small>prioridade</small></div>
     </div>
     <button class="btn btn-escuro btn-bloco" id="calcArea">Calcular para ${a.titulo.toLowerCase()} →</button>
@@ -879,52 +874,52 @@ function renderPainel(){
   });
 }
 
-/* ---------- comparador antes/depois ---------- */
-(function(){
-  const c = $("#comparador"), dep = c.querySelector(".depois"), div = c.querySelector(".divisor"), alca = c.querySelector(".alca");
-  let arrastando=false;
-  const set = p => { p=Math.max(0,Math.min(100,p)); dep.style.clipPath=`inset(0 0 0 ${p}%)`; div.style.left=alca.style.left=p+"%"; c.setAttribute("aria-valuenow",Math.round(p)); };
-  const mover = e => { const r=c.getBoundingClientRect(); set((e.clientX-r.left)/r.width*100); };
-  c.addEventListener("pointerdown",e=>{arrastando=true;c.setPointerCapture(e.pointerId);mover(e)});
-  c.addEventListener("pointermove",e=>arrastando&&mover(e));
-  c.addEventListener("pointerup",()=>arrastando=false);
-  c.addEventListener("keydown",e=>{ const v=+c.getAttribute("aria-valuenow"); if(e.key==="ArrowLeft")set(v-5); if(e.key==="ArrowRight")set(v+5); });
-  // demonstração automática ao aparecer
-  const o=new IntersectionObserver(es=>{ if(es[0].isIntersecting){ o.disconnect(); let t=0; const anim=()=>{ t+=.02; set(50+Math.sin(t*3)*30*Math.max(0,1-t/2)); if(t<2&&!arrastando) requestAnimationFrame(anim); }; anim(); } },{threshold:.5});
-  o.observe(c);
-})();
-
 /* ---------- produto ---------- */
-const sel = { emb: CONFIG.embalagens[0], cor: CONFIG.cores[0] };
-$("#tamanhos").innerHTML = CONFIG.embalagens.map(e=>`<button class="tamanho" data-id="${e.id}"><b>${fmt(e.litros)} L</b><small>${e.rotulo}</small></button>`).join("");
-$("#cores").innerHTML = CONFIG.cores.map(c=>`<button class="cor" data-id="${c.id}" style="background:${c.hex}" aria-label="${c.nome}" title="${c.nome}"></button>`).join("");
-$("#specs").innerHTML = CONFIG.specs.map(([k,v])=>`<div><dt>${k}</dt><dd>${v}</dd></div>`).join("");
+const sel = { linha: CONFIG.linhas[0], emb: CONFIG.linhas[0].embalagens[0], cor: CONFIG.cores[0] };
+$("#linhas").innerHTML = CONFIG.linhas.map(l=>`
+  <button class="linha" data-id="${l.id}">
+    ${l.selo?`<span class="selo ${l.novo?"novo":""}">${l.selo}</span>`:""}
+    <b>${l.nome}</b><small>${l.resumo}</small>
+    <span class="esp">Espessura <i style="width:${l.espessura*.6}%"></i></span>
+  </button>`).join("");
+$$(".linha").forEach(b=>b.addEventListener("click",()=>{ sel.linha=linhaPor(b.dataset.id); sel.emb=sel.linha.embalagens[0]; renderProduto(true); }));
+$("#cores").innerHTML = CONFIG.cores.map(c=>`<button class="cor" data-id="${c.id}" aria-label="${c.nome}"><i style="background:${c.hex}"></i>${c.nome}</button>`).join("");
+$$(".cor").forEach(b=>b.addEventListener("click",()=>{ sel.cor=corPor(b.dataset.id); renderProduto(); }));
 $("#tagPix").textContent = `${Math.round(CONFIG.descontoPix*100)}% OFF no PIX`;
-$$(".tamanho").forEach(b=>b.addEventListener("click",()=>{ sel.emb=CONFIG.embalagens.find(e=>e.id===b.dataset.id); renderProduto(true); }));
-$$(".cor").forEach(b=>b.addEventListener("click",()=>{ sel.cor=CONFIG.cores.find(c=>c.id===b.dataset.id); renderProduto(true); }));
 function renderProduto(anima){
-  $$(".tamanho").forEach(b=>b.classList.toggle("ativo",b.dataset.id===sel.emb.id));
+  const l = sel.linha;
+  $$(".linha").forEach(b=>b.classList.toggle("ativo",b.dataset.id===l.id));
   $$(".cor").forEach(b=>b.classList.toggle("ativo",b.dataset.id===sel.cor.id));
+  $("#nomeLinha").textContent = l.nome;
+  $("#descLinha").textContent = l.descricao;
+  $("#tamanhos").innerHTML = l.embalagens.map(e=>`<button class="tamanho ${e.id===sel.emb.id?"ativo":""}" data-id="${e.id}"><b>${fmt(e.qtd)} ${U}</b><small>${e.rotulo}</small></button>`).join("");
+  $$(".tamanho").forEach(b=>b.addEventListener("click",()=>{ sel.emb=embPor(l,b.dataset.id); renderProduto(); }));
   $("#preco").textContent = brl(sel.emb.preco);
   $("#precoAntigo").textContent = sel.emb.precoDe ? brl(sel.emb.precoDe) : "";
   $("#precoPix").textContent = `${brl(sel.emb.preco*(1-CONFIG.descontoPix))} no PIX`;
   $("#nomeCor").textContent = sel.cor.nome;
-  const m2 = sel.emb.litros/(CONFIG.consumoPorDemao*3);
-  $("#rendimento").textContent = `rende ≈ ${fmt(m2)} m² (3 demãos)`;
-  $$("[data-balde]").forEach(el=>el.innerHTML = baldeSVG(sel.cor.hex, sel.emb));
-  if(anima){ const b=$("#baldeLoja"); b.style.transform="scale(.9) rotate(-4deg)"; setTimeout(()=>b.style.transform="",180); }
+  $("#rendimento").textContent = `rende ≈ ${fmt(sel.emb.qtd/(l.consumoPorDemao*3))} m² em 3 demãos`;
+  $("#specs").innerHTML = l.specs.map(([k,v])=>`<div><dt>${k}</dt><dd>${v}</dd></div>`).join("");
+  $("#amostra").style.background = sel.cor.hex;
+  const f = $("#fotoLoja");
+  $("#galeria").classList.toggle("premium", !!l.aviso);
+  $("#avisoPremium").textContent = l.aviso || "";
+  if(f.getAttribute("src")!==l.foto) f.src = l.foto;
+  f.alt = `Balde da ${l.nome}`;
+  if(anima){ f.style.transform="scale(.92)"; setTimeout(()=>f.style.transform="",180); }
 }
-renderProduto();
 const qtdIn = $("#qtd");
 $("#menos").onclick=()=>qtdIn.value=Math.max(1,(+qtdIn.value||1)-1);
 $("#mais").onclick=()=>qtdIn.value=(+qtdIn.value||1)+1;
-$("#adicionar").onclick=()=>{ adicionar(sel.emb.id, sel.cor.id, Math.max(1,+qtdIn.value||1)); };
+$("#adicionar").onclick=()=>adicionar(sel.linha.id, sel.emb.id, sel.cor.id, Math.max(1,+qtdIn.value||1));
 
 /* ---------- calculadora ---------- */
 $("#tipoArea").innerHTML = AREAS.map(a=>`<option value="${a.id}">${a.titulo}</option>`).join("");
-let demaos = 3, kitAtual = [];
+$("#calcLinha").innerHTML = CONFIG.linhas.map((l,i)=>`<button data-id="${l.id}" class="${i?"":"ativo"}">${l.novo?"Premium":"Tradicional"}</button>`).join("");
+let demaos = 3, linhaCalc = CONFIG.linhas[0], kitAtual = [];
 function definirDemaos(d){ demaos=d; $$("#demaos button").forEach(b=>b.classList.toggle("ativo",+b.dataset.d===d)); }
 $$("#demaos button").forEach(b=>b.addEventListener("click",()=>{ definirDemaos(+b.dataset.d); calcular(); }));
+$$("#calcLinha button").forEach(b=>b.addEventListener("click",()=>{ linhaCalc=linhaPor(b.dataset.id); $$("#calcLinha button").forEach(x=>x.classList.toggle("ativo",x===b)); calcular(); }));
 $("#tipoArea").addEventListener("change",()=>{ definirDemaos(AREAS.find(a=>a.id===$("#tipoArea").value).demaos); calcular(); });
 ["#comp","#larg"].forEach(s=>$(s).addEventListener("input",()=>{
   const c=parseFloat($("#comp").value), l=parseFloat($("#larg").value);
@@ -933,49 +928,50 @@ $("#tipoArea").addEventListener("change",()=>{ definirDemaos(AREAS.find(a=>a.id=
 }));
 $("#area").addEventListener("input",()=>{ $("#comp").value=$("#larg").value=""; calcular(); });
 
-/* combinação de embalagens mais barata que cobre a quantidade */
-function melhorKit(litros){
-  const E=[...CONFIG.embalagens].sort((a,b)=>b.litros-a.litros);
+/* combinação mais barata de embalagens que cobre a quantidade */
+function melhorKit(total, embalagens){
+  const E=[...embalagens].sort((a,b)=>b.qtd-a.qtd);
   let melhor=null;
   const busca=(i,resto,qtds,custo)=>{
     if(melhor && custo>=melhor.custo) return;
     if(resto<=1e-9){ melhor={qtds:[...qtds],custo}; return; }
     if(i>=E.length) return;
-    const max=Math.ceil(resto/E[i].litros);
-    for(let q=max;q>=0;q--){ qtds[i]=q; busca(i+1,resto-q*E[i].litros,qtds,custo+q*E[i].preco); }
+    for(let q=Math.ceil(resto/E[i].qtd);q>=0;q--){ qtds[i]=q; busca(i+1,resto-q*E[i].qtd,qtds,custo+q*E[i].preco); }
     qtds[i]=0;
   };
-  busca(0,litros,E.map(()=>0),0);
+  busca(0,total,E.map(()=>0),0);
   return (melhor?melhor.qtds:[]).map((q,i)=>({emb:E[i],q})).filter(x=>x.q>0);
 }
 function calcular(){
-  const area = Math.max(0,parseFloat($("#area").value)||0);
-  const litros = area*CONFIG.consumoPorDemao*demaos*(1+CONFIG.perda);
-  $("#litros").textContent = fmt(litros);
-  $("#calcDetalhe").textContent = `${fmt(area)} m² × ${demaos} demãos × ${fmt(CONFIG.consumoPorDemao)} L/m² + ${Math.round(CONFIG.perda*100)}% de margem`;
-  kitAtual = litros>0 ? melhorKit(litros) : [];
-  const total = kitAtual.reduce((s,k)=>s+k.q*k.emb.preco,0);
-  const lt = kitAtual.reduce((s,k)=>s+k.q*k.emb.litros,0);
-  $("#kit").innerHTML = kitAtual.length ? kitAtual.map(k=>`<div class="kit-item"><span><b>${k.q}×</b> ${k.emb.rotulo} ${fmt(k.emb.litros)} L</span><span>${brl(k.q*k.emb.preco)}</span></div>`).join("") : `<div class="kit-item" style="opacity:.7">Informe a área para montar o kit</div>`;
-  $("#kitTotal").textContent = brl(total);
-  $("#medidor").style.width = lt? Math.min(100,litros/lt*100)+"%" : "0";
-  $("#sobra").textContent = lt ? `Kit com ${fmt(lt)} L · sobra ${fmt(lt-litros)} L para retoques` : "";
+  const area = Math.max(0,parseFloat($("#area").value)||0), l = linhaCalc;
+  const total = area*l.consumoPorDemao*demaos*(1+CONFIG.perda);
+  $("#quantidade").textContent = fmt(total);
+  $("#unidadeCalc").textContent = " "+U;
+  $("#calcDetalhe").textContent = `${fmt(area)} m² × ${demaos} demãos × ${fmt(l.consumoPorDemao)} ${U}/m² + ${Math.round(CONFIG.perda*100)}% de margem · ${l.nome}`;
+  kitAtual = total>0 ? melhorKit(total,l.embalagens) : [];
+  const preco = kitAtual.reduce((s,k)=>s+k.q*k.emb.preco,0);
+  const cabe = kitAtual.reduce((s,k)=>s+k.q*k.emb.qtd,0);
+  $("#kit").innerHTML = kitAtual.length
+    ? kitAtual.map(k=>`<div class="kit-item"><span><b>${k.q}×</b> ${k.emb.rotulo} ${fmt(k.emb.qtd)} ${U}</span><span>${brl(k.q*k.emb.preco)}</span></div>`).join("")
+    : `<div class="kit-item" style="opacity:.7">Informe a área para montar o kit</div>`;
+  $("#kitTotal").textContent = brl(preco);
+  $("#medidor").style.width = cabe ? Math.min(100,total/cabe*100)+"%" : "0";
+  $("#sobra").textContent = cabe ? `Kit com ${fmt(cabe)} ${U} · sobram ${fmt(cabe-total)} ${U} para retoques` : "";
   $("#addKit").disabled = !kitAtual.length;
 }
 $("#addKit").onclick=()=>{
   if(!kitAtual.length) return;
-  kitAtual.forEach(k=>adicionar(k.emb.id, sel.cor.id, k.q, true));
-  toast(`Kit adicionado (cor ${sel.cor.nome})`); abrirCarrinho();
+  kitAtual.forEach(k=>adicionar(linhaCalc.id, k.emb.id, sel.cor.id, k.q, true));
+  toast(`Kit adicionado na cor ${sel.cor.nome}. Dá para trocar a cor no produto.`); abrirCarrinho();
 };
-calcular();
 
 /* ---------- carrinho ---------- */
-let carrinho = store.get("carrinho_imper",[]);
-let frete = null; // {valor:number|null, texto:string}
-function salvar(){ store.set("carrinho_imper",carrinho); renderCarrinho(); }
-function adicionar(embId, corId, q, silencioso){
-  const it = carrinho.find(i=>i.emb===embId&&i.cor===corId);
-  if(it) it.q+=q; else carrinho.push({emb:embId,cor:corId,q});
+let carrinho = store.get("carrinho_sbl",[]).filter(i=>embPor(linhaPor(i.linha),i.emb)&&corPor(i.cor));
+let frete = null;
+function salvar(){ store.set("carrinho_sbl",carrinho); renderCarrinho(); }
+function adicionar(linhaId, embId, corId, q, silencioso){
+  const it = carrinho.find(i=>i.linha===linhaId&&i.emb===embId&&i.cor===corId);
+  if(it) it.q+=q; else carrinho.push({linha:linhaId,emb:embId,cor:corId,q});
   salvar();
   const b=$("#abrirCarrinho"); b.classList.remove("pulo"); void b.offsetWidth; b.classList.add("pulo");
   if(!silencioso) toast("Adicionado ao carrinho ✓");
@@ -983,22 +979,22 @@ function adicionar(embId, corId, q, silencioso){
 function renderCarrinho(){
   const qtd = carrinho.reduce((s,i)=>s+i.q,0);
   const badge=$("#carrinhoQtd"); badge.textContent=qtd; badge.classList.toggle("tem",qtd>0);
-  const itens=$("#itens");
   if(!carrinho.length){
-    itens.innerHTML = `<div class="vazio"><svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 6h15l-1.5 9h-12z"/><path d="M6 6L5 3H2"/><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/></svg>Seu carrinho está vazio.<br><a href="#produto" onclick="fecharCarrinho()" style="color:var(--agua);font-weight:700">Ver produto</a></div>`;
+    $("#itens").innerHTML = `<div class="vazio"><svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 6h15l-1.5 9h-12z"/><path d="M6 6L5 3H2"/><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/></svg>Seu carrinho está vazio.<br><a href="#produto" id="verProduto" style="color:var(--vermelho);font-weight:700">Ver produtos</a></div>`;
+    $("#verProduto").onclick = fecharCarrinho;
     $("#rodapeCarrinho").hidden = true; return;
   }
   $("#rodapeCarrinho").hidden = false;
-  itens.innerHTML = carrinho.map((i,idx)=>{
-    const e=CONFIG.embalagens.find(x=>x.id===i.emb), c=CONFIG.cores.find(x=>x.id===i.cor);
+  $("#itens").innerHTML = carrinho.map((i,idx)=>{
+    const l=linhaPor(i.linha), e=embPor(l,i.emb), c=corPor(i.cor);
     return `<div class="item-carrinho">
-      <div class="item-thumb" style="padding:6px">${baldeSVG(c.hex,e)}</div>
-      <div><h4>${e.rotulo} ${fmt(e.litros)} L</h4><small>${c.nome} · ${brl(e.preco)}</small>
+      <div class="item-thumb"><img src="${l.foto}" alt=""><i style="background:${c.hex}"></i></div>
+      <div><h4>${l.nome}</h4><small>${e.rotulo} ${fmt(e.qtd)} ${U} · ${c.nome} · ${brl(e.preco)}</small>
         <div class="item-acoes"><button data-a="-" data-i="${idx}" aria-label="Diminuir">−</button><b>${i.q}</b><button data-a="+" data-i="${idx}" aria-label="Aumentar">+</button><button class="remover" data-a="x" data-i="${idx}">remover</button></div>
       </div>
       <div class="item-preco">${brl(e.preco*i.q)}</div></div>`;
   }).join("");
-  itens.querySelectorAll("button[data-a]").forEach(b=>b.onclick=()=>{
+  $$("#itens button[data-a]").forEach(b=>b.onclick=()=>{
     const i=carrinho[+b.dataset.i];
     if(b.dataset.a==="+") i.q++; else if(b.dataset.a==="-") i.q--; else i.q=0;
     carrinho=carrinho.filter(x=>x.q>0); salvar();
@@ -1006,16 +1002,17 @@ function renderCarrinho(){
   atualizarTotais();
 }
 function totais(){
-  const sub = carrinho.reduce((s,i)=>s+CONFIG.embalagens.find(e=>e.id===i.emb).preco*i.q,0);
+  const sub = carrinho.reduce((s,i)=>s+embPor(linhaPor(i.linha),i.emb).preco*i.q,0);
   const pix = document.querySelector("input[name=pag]:checked").value==="PIX";
   const desc = pix ? sub*CONFIG.descontoPix : 0;
   const fv = frete && typeof frete.valor==="number" ? frete.valor : 0;
-  return {sub,desc,fv,total:sub-desc+fv};
+  return {sub,desc,total:sub-desc+fv};
 }
+const textoFrete = () => !frete ? "Informe o CEP" : frete.valor===0 ? "Grátis" : frete.valor===null ? "A combinar" : brl(frete.valor);
 function atualizarTotais(){
   const t=totais();
   $("#subtotal").textContent=brl(t.sub);
-  $("#freteValor").textContent = !frete ? "Informe o CEP" : (frete.valor===0?"Grátis":frete.valor===null?"A combinar":brl(frete.valor));
+  $("#freteValor").textContent = textoFrete();
   $("#linhaDesc").hidden = !t.desc; $("#descValor").textContent = "− "+brl(t.desc);
   $("#total").textContent=brl(t.total);
 }
@@ -1029,32 +1026,28 @@ async function consultarCep(){
   if(cep.length!==8){ msg.textContent="Digite um CEP válido."; return; }
   msg.textContent="Consultando…";
   try{
-    const r = await fetch(`https://viacep.com.br/ws/${cep}/json/`); const d = await r.json();
+    const d = await (await fetch(`https://viacep.com.br/ws/${cep}/json/`)).json();
     if(d.erro) throw 0;
     const local = `${d.localidade}/${d.uf}`;
-    if(CONFIG.cidadesFreteGratis.includes(d.localidade) && d.uf==="SP"){
-      frete={valor:0,texto:`Entrega grátis em ${local}`,local}; msg.classList.add("ok");
-    } else if(d.uf==="SP"){
-      frete={valor:CONFIG.freteGrandeSP,texto:`Entrega para ${local}`,local};
-    } else {
-      frete={valor:null,texto:`Frete para ${local} combinado no WhatsApp`,local};
-    }
+    if(d.uf==="SP" && CONFIG.cidadesFreteGratis.includes(d.localidade)){ frete={valor:0,texto:`Entrega grátis em ${local}`,local}; msg.classList.add("ok"); }
+    else if(d.uf==="SP") frete={valor:CONFIG.freteSP,texto:`Entrega para ${local}`,local};
+    else frete={valor:null,texto:`Frete para ${local} combinado no WhatsApp`,local};
     msg.textContent = frete.texto;
-    store.set("cep_imper",$("#cep").value);
+    store.set("cep_sbl",$("#cep").value);
   }catch{
-    frete={valor:null,texto:"Frete a combinar",local:"CEP "+$("#cep").value};
+    frete={valor:null,local:"CEP "+$("#cep").value};
     msg.textContent="Não encontramos o CEP. O frete será combinado no WhatsApp.";
   }
   atualizarTotais();
 }
 $("#finalizar").onclick=()=>{
   const t=totais(), pag=document.querySelector("input[name=pag]:checked").value;
-  const linhas = carrinho.map(i=>{ const e=CONFIG.embalagens.find(x=>x.id===i.emb), c=CONFIG.cores.find(x=>x.id===i.cor); return `• ${i.q}× ${e.rotulo} ${fmt(e.litros)} L - ${c.nome} (${brl(e.preco*i.q)})`; });
+  const linhas = carrinho.map(i=>{ const l=linhaPor(i.linha), e=embPor(l,i.emb), c=corPor(i.cor); return `• ${i.q}× ${l.nome} ${fmt(e.qtd)} ${U} - ${c.nome} (${brl(e.preco*i.q)})`; });
   const msg = [
-    `Olá! Quero fazer um pedido do *${CONFIG.produto.nome}*:`,"",...linhas,"",
+    "Olá! Quero fazer um pedido pelo site:","",...linhas,"",
     `Subtotal: ${brl(t.sub)}`,
     t.desc?`Desconto PIX: -${brl(t.desc)}`:null,
-    `Frete: ${!frete?"a calcular":frete.valor===null?"a combinar":frete.valor===0?"grátis":brl(frete.valor)}${frete?` (${frete.local})`:""}`,
+    `Frete: ${textoFrete().toLowerCase()}${frete?` (${frete.local})`:""}`,
     `*Total: ${brl(t.total)}*`,
     `Pagamento: ${pag}`
   ].filter(x=>x!==null).join("\n");
@@ -1065,11 +1058,16 @@ function abrirCarrinho(){ veu.classList.add("aberto"); gaveta.classList.add("abe
 function fecharCarrinho(){ veu.classList.remove("aberto"); gaveta.classList.remove("aberta"); gaveta.setAttribute("aria-hidden","true"); }
 $("#abrirCarrinho").onclick=abrirCarrinho; $("#fecharCarrinho").onclick=fecharCarrinho; veu.onclick=fecharCarrinho;
 addEventListener("keydown",e=>{ if(e.key==="Escape") fecharCarrinho(); });
-$("#cep").value = store.get("cep_imper","");
-renderCarrinho();
 
 let toastT;
-function toast(t){ const el=$("#toast"); el.textContent=t; el.classList.add("mostrar"); clearTimeout(toastT); toastT=setTimeout(()=>el.classList.remove("mostrar"),2200); }
+function toast(t){ const el=$("#toast"); el.textContent=t; el.classList.add("mostrar"); clearTimeout(toastT); toastT=setTimeout(()=>el.classList.remove("mostrar"),2600); }
+
+/* início */
+renderPainel();
+renderProduto();
+calcular();
+$("#cep").value = store.get("cep_sbl","");
+renderCarrinho();
 </script>
 </body>
 </html>
