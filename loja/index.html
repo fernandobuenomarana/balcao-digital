@@ -240,6 +240,22 @@ a{color:inherit}
 .retirada-info{font-size:.84rem;background:#fff;border:1px dashed #c9cfdc;border-radius:12px;padding:12px 14px;color:var(--texto-suave)}
 .retirada-info b{color:var(--texto)}
 
+.campo-c{width:100%;padding:12px 14px;border:2px solid var(--borda);border-radius:12px;background:#fff;margin-top:8px}
+.campo-c:focus{outline:none;border-color:var(--vermelho)}
+.dados-cliente{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.dados-cliente .campo-c{margin-top:0}
+.btn-whats.sec{background:transparent;color:#178f44;border:2px solid #b9e6c9;box-shadow:none;padding:12px;font-size:.85rem}
+.btn-whats.sec:hover{background:#effaf3}
+.seguro{display:flex;align-items:center;justify-content:center;gap:6px;font-size:.74rem;color:var(--texto-suave)}
+.modal-fundo{position:fixed;inset:0;background:rgba(10,18,34,.7);backdrop-filter:blur(4px);z-index:130;display:grid;place-items:center;padding:16px}
+.modal-fundo[hidden]{display:none}
+.modal{background:#fff;border-radius:24px;padding:36px 28px;max-width:420px;width:100%;text-align:center;animation:entra .4s ease}
+.modal .ic-ok{width:72px;height:72px;border-radius:50%;margin:0 auto 18px;display:grid;place-items:center;color:#fff;background:var(--ok)}
+.modal.pendente .ic-ok{background:#e0a100}
+.modal.falhou .ic-ok{background:var(--vermelho)}
+.modal h3{font-size:1.5rem;margin-bottom:8px}
+.modal p{color:var(--texto-suave);margin-bottom:22px}
+
 /* ---------- calculadora ---------- */
 .calc{background:linear-gradient(135deg,#eef1f7,#f9fafc)}
 .calc-card{display:grid;grid-template-columns:1fr 1fr;background:#fff;border-radius:28px;box-shadow:var(--sombra);overflow:hidden;margin-top:40px}
@@ -314,7 +330,8 @@ footer a{color:#fff}
 .gaveta-topo{display:flex;justify-content:space-between;align-items:center;padding:22px 24px;border-bottom:1px solid var(--borda)}
 .gaveta-topo h3{font-size:1.2rem}
 .fechar{width:38px;height:38px;border-radius:50%;background:var(--fundo);display:grid;place-items:center;font-size:1.3rem}
-.gaveta-corpo{flex:1;overflow-y:auto;padding:20px 24px}
+.gaveta{overflow-y:auto}
+.gaveta-corpo{flex:1 0 auto;padding:20px 24px}
 .item-carrinho{display:grid;grid-template-columns:64px 1fr auto;gap:14px;align-items:center;padding:14px 0;border-bottom:1px solid var(--borda)}
 .item-thumb{width:64px;height:64px;border-radius:12px;background:var(--navy);overflow:hidden;position:relative}
 .item-thumb img{width:100%;height:100%;object-fit:cover;transform:scale(1.5)}
@@ -706,6 +723,7 @@ footer a{color:#fff}
     <div id="blocoCep">
       <div class="cep-linha"><input id="cep" placeholder="Seu CEP" inputmode="numeric" maxlength="9" aria-label="CEP"><button id="calcFrete">Frete</button></div>
       <div class="frete-msg" id="freteMsg"></div>
+      <input class="campo-c" id="numero" placeholder="Número e complemento" autocomplete="address-line2" aria-label="Número e complemento">
     </div>
     <div class="retirada-info" id="blocoRetirada" hidden></div>
     <div class="linha-total"><span>Subtotal</span><span id="subtotal">R$ 0,00</span></div>
@@ -717,9 +735,15 @@ footer a{color:#fff}
       <label><input type="radio" name="pag" value="Cartão"><span id="rotuloCartao">Cartão</span></label>
       <label><input type="radio" name="pag" value="Boleto">Boleto</label>
     </div>
+    <div class="dados-cliente">
+      <input class="campo-c" id="nomeCliente" placeholder="Seu nome" autocomplete="name" aria-label="Seu nome">
+      <input class="campo-c" id="telCliente" placeholder="WhatsApp com DDD" inputmode="tel" autocomplete="tel" aria-label="WhatsApp com DDD">
+    </div>
+    <button class="btn btn-primario btn-bloco" id="pagar" hidden>PAGAR AGORA</button>
+    <div class="seguro" id="seguro" hidden><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg>Pagamento seguro pelo Mercado Pago</div>
     <button class="btn btn-whats btn-bloco" id="finalizar">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.600-2.1-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5 2.5 1 3 .8 3.6.7.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.2-.6-.4zM12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2z"/></svg>
-      FINALIZAR PELO WHATSAPP
+      <span id="txtWhats">FINALIZAR PELO WHATSAPP</span>
     </button>
   </div>
 </aside>
@@ -728,6 +752,14 @@ footer a{color:#fff}
   <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.6-2.1-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5 2.5 1 3 .8 3.6.7.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.2-.6-.4zM12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2z"/></svg>
 </a>
 <div class="toast" id="toast" role="status"></div>
+<div class="modal-fundo" id="modalFundo" hidden>
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitulo">
+    <div class="ic-ok"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" id="modalIcone"><path d="M5 12l5 5L20 7"/></svg></div>
+    <h3 id="modalTitulo"></h3>
+    <p id="modalTexto"></p>
+    <button class="btn btn-escuro btn-bloco" id="modalFechar">Continuar</button>
+  </div>
+</div>
 
 <script>
 /* Fotos embutidas na página, para ela funcionar como um arquivo único.
@@ -749,6 +781,8 @@ const CONFIG = {
   whatsapp: "5511900000000",          // TROCAR: DDI + DDD + número, só dígitos
   descontoPix: 0.05,                  // 5% no PIX
   parcelasSemJuros: 3,                // cartão em até 3x sem juros
+  checkoutOnline: true,               // botão "Pagar agora" (Mercado Pago, via Netlify)
+  apiPagamento: "/api/criar-pagamento",
   retirada: {
     endereco: "",                     // ex.: "Rua X, 123, Santo André". Vazio = combinado no WhatsApp
     horario: "",                      // ex.: "Seg a sex 8h às 18h · Sáb 8h às 12h"
@@ -784,6 +818,7 @@ const CONFIG = {
       nome: "Super Borracha Líquida Premium",
       selo: "Lançamento",
       novo: true,
+      vendaOnline: false,             // pré-venda: só pelo WhatsApp até o balde novo chegar
       resumo: "Borracha mais espessa, para quem quer a camada mais forte.",
       descricao: "A nova linha de O Telhadista ABC: uma borracha mais espessa, que forma uma camada mais encorpada e resistente a cada demão. Ideal para lajes expostas, telhados muito castigados e áreas com trincas maiores.",
       foto: "produto",            // TROCAR pela foto do balde novo (ver IMG, logo acima)
@@ -1116,11 +1151,67 @@ $("#finalizar").onclick=()=>{
   ].filter(x=>x!==null).join("\n");
   window.open(linkWhats(msg),"_blank","noopener");
 };
+/* ---------- pagamento online ---------- */
+const pagSel = () => document.querySelector("input[name=pag]:checked").value;
+if(CONFIG.checkoutOnline){
+  $("#pagar").hidden = false; $("#seguro").hidden = false;
+  $("#finalizar").classList.add("sec"); $("#txtWhats").textContent = "Prefiro fechar pelo WhatsApp";
+}
+$("#telCliente").addEventListener("input",e=>{
+  let v=e.target.value.replace(/\D/g,"").slice(0,11);
+  if(v.length>6) v=`(${v.slice(0,2)}) ${v.slice(2,v.length-4)}-${v.slice(-4)}`; else if(v.length>2) v=`(${v.slice(0,2)}) ${v.slice(2)}`;
+  e.target.value=v;
+});
+{ const c=store.get("cliente_sbl",{}); $("#nomeCliente").value=c.nome||""; $("#telCliente").value=c.tel||""; $("#numero").value=c.numero||""; }
+$("#pagar").onclick = async ()=>{
+  const nome=$("#nomeCliente").value.trim(), tel=$("#telCliente").value.replace(/\D/g,""), r=retirar();
+  const preVenda = carrinho.find(i=>linhaPor(i.linha).vendaOnline===false);
+  if(preVenda){ toast(`A ${linhaPor(preVenda.linha).nome} está em pré-venda. Finalize pelo WhatsApp.`); return; }
+  if(!r && $("#cep").value.replace(/\D/g,"").length!==8){ toast("Informe o CEP para a entrega."); $("#cep").focus(); return; }
+  if(!r && !$("#numero").value.trim()){ toast("Informe o número do endereço."); $("#numero").focus(); return; }
+  if(nome.length<2){ toast("Informe seu nome."); $("#nomeCliente").focus(); return; }
+  if(tel.length<10){ toast("Informe seu WhatsApp com DDD."); $("#telCliente").focus(); return; }
+  store.set("cliente_sbl",{nome,tel:$("#telCliente").value,numero:$("#numero").value});
+  const b=$("#pagar"); b.disabled=true; b.textContent="ABRINDO O PAGAMENTO…";
+  try{
+    const resp = await fetch(CONFIG.apiPagamento,{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify({
+      itens: carrinho, pagamento: pagSel(), entrega: r?"loja":"casa",
+      cep: $("#cep").value, numero: $("#numero").value, nome, telefone: tel })});
+    const d = await resp.json().catch(()=>({}));
+    if(!resp.ok || !d.url) throw new Error(d.erro || "Não foi possível abrir o pagamento.");
+    store.set("pedido_sbl", d.pedido);
+    location.href = d.url;
+  }catch(e){
+    const m = e instanceof TypeError ? "Pagamento online indisponível agora." : e.message;
+    toast(`${m} Você pode finalizar pelo WhatsApp.`);
+    b.disabled=false; b.textContent="PAGAR AGORA";
+  }
+};
+
+/* ---------- volta do Mercado Pago ---------- */
+function mostrarModal(tipo,titulo,texto){
+  $("#modal").className = "modal "+tipo;
+  $("#modalTitulo").textContent = titulo; $("#modalTexto").textContent = texto;
+  if(tipo==="falhou") $("#modalIcone").innerHTML = '<path d="M7 7l10 10M17 7L7 17"/>';
+  else if(tipo==="pendente") $("#modalIcone").innerHTML = '<circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/>';
+  $("#modalFundo").hidden = false; $("#modalFechar").focus();
+}
+$("#modalFechar").onclick = ()=>{ $("#modalFundo").hidden = true; };
+function tratarRetorno(){
+  const q = new URLSearchParams(location.search), st = q.get("retorno");
+  if(!st) return;
+  const ped = q.get("pedido") ? ` Pedido ${q.get("pedido")}.` : "";
+  if(st==="aprovado"){ carrinho=[]; salvar(); mostrarModal("ok","Pagamento aprovado!",`Recebemos o seu pedido.${ped} A confirmação chega no seu WhatsApp.`); }
+  else if(st==="pendente") mostrarModal("pendente","Pagamento em processamento",`Assim que o pagamento for confirmado, avisamos no WhatsApp. O boleto pode levar até 3 dias úteis.${ped}`);
+  else mostrarModal("falhou","Pagamento não concluído","Nenhum valor foi cobrado. Tente de novo ou finalize pelo WhatsApp.");
+  history.replaceState(null,"",location.pathname+location.hash);
+}
+
 const veu=$("#veu"), gaveta=$("#gaveta");
 function abrirCarrinho(){ veu.classList.add("aberto"); gaveta.classList.add("aberta"); gaveta.setAttribute("aria-hidden","false"); }
 function fecharCarrinho(){ veu.classList.remove("aberto"); gaveta.classList.remove("aberta"); gaveta.setAttribute("aria-hidden","true"); }
 $("#abrirCarrinho").onclick=abrirCarrinho; $("#fecharCarrinho").onclick=fecharCarrinho; veu.onclick=fecharCarrinho;
-addEventListener("keydown",e=>{ if(e.key==="Escape") fecharCarrinho(); });
+addEventListener("keydown",e=>{ if(e.key==="Escape"){ fecharCarrinho(); $("#modalFundo").hidden=true; } });
 
 let toastT;
 function toast(t){ const el=$("#toast"); el.textContent=t; el.classList.add("mostrar"); clearTimeout(toastT); toastT=setTimeout(()=>el.classList.remove("mostrar"),2600); }
@@ -1132,6 +1223,7 @@ calcular();
 $("#cep").value = store.get("cep_sbl","");
 renderCarrinho();
 renderEntrega();
+tratarRetorno();
 </script>
 </body>
 </html>
